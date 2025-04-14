@@ -1,0 +1,1447 @@
+name,summary,description,dependency_count,has_dep_librosa;,has_dep_phonemizer;,has_dep_pyctcdecode>=0.4.0;,"has_dep_sentencepiece!=0.1.92,>=0.1.91;",has_dep_datasets!=2.5.0;,has_dep_accelerate>=0.26.0;,"has_dep_Pillow<=15.0,>=10.0.1;",has_dep_scikit-learn;,has_dep_ruff==0.11.2;,has_dep_pytest-timeout;,has_dep_protobuf;,has_dep_tf2onnx;,has_dep_faiss-cpu;,has_dep_pydantic;,has_dep_GitPython<3.1.19;,"has_dep_tokenizers<0.22,>=0.21;",has_dep_onnxconverter-common;,has_dep_cookiecutter==1.7.3;,has_dep_torch>=2.0;,has_dep_pytest-xdist;,has_dep_optuna;,"has_dep_sacrebleu<2.0.0,>=1.4.12;","has_dep_rouge-score!=0.0.7,!=0.0.8,!=0.1,!=0.1.1;",has_dep_nltk<=3.8.1;,has_dep_pytest-rerunfailures;,has_dep_sacremoses;,has_dep_rjieba;,has_dep_beautifulsoup4;,has_dep_timeout-decorator;,has_dep_dill<0.3.5;,has_dep_evaluate>=0.2.0;,"has_dep_keras-nlp<0.14.0,>=0.3.1;",has_dep_tensorflow-text<2.16;,has_dep_pytest-order;,has_dep_sigopt;,has_dep_ray[tune]>=2.7.0;,"has_dep_kernels<0.4,>=0.3.2;",has_dep_pytest-cov;,has_dep_pytest;,has_dep_torchaudio;,has_dep_tensorboard;,"has_dep_pytest<8.0.0,>=7.2.0;",has_dep_pytest-asyncio;,has_dep_psutil;,has_dep_pytest-rich;,has_dep_parameterized;,has_dep_num2words;,has_dep_pandas>=1.1.5;,has_dep_matplotlib>=3.3.4;,"has_dep_tensorflow<2.16,>2.9;",is_web_framework,is_stable,is_ml_package,is_data_science,tfidf_0,tfidf_1,tfidf_2,tfidf_3,tfidf_4,tfidf_5,tfidf_6,tfidf_7,tfidf_8,tfidf_9,tfidf_10,tfidf_11,tfidf_12,tfidf_13,tfidf_14,tfidf_15,tfidf_16,tfidf_17,tfidf_18,tfidf_19,tfidf_20,tfidf_21,tfidf_22,tfidf_23,tfidf_24,tfidf_25,tfidf_26,tfidf_27,tfidf_28,tfidf_29,tfidf_30,tfidf_31,tfidf_32,tfidf_33,tfidf_34,tfidf_35,tfidf_36,tfidf_37,tfidf_38,tfidf_39,tfidf_40,tfidf_41,tfidf_42,tfidf_43,tfidf_44,tfidf_45,tfidf_46,tfidf_47,tfidf_48,tfidf_49,tfidf_50,tfidf_51,tfidf_52,tfidf_53,tfidf_54,tfidf_55,tfidf_56,tfidf_57,tfidf_58,tfidf_59,tfidf_60,tfidf_61,tfidf_62,tfidf_63,tfidf_64,tfidf_65,tfidf_66,tfidf_67,tfidf_68,tfidf_69,tfidf_70,tfidf_71,tfidf_72,tfidf_73,tfidf_74,tfidf_75,tfidf_76,tfidf_77,tfidf_78,tfidf_79,tfidf_80,tfidf_81,tfidf_82,tfidf_83,tfidf_84,tfidf_85,tfidf_86,tfidf_87,tfidf_88,tfidf_89,tfidf_90,tfidf_91,tfidf_92,tfidf_93,tfidf_94,tfidf_95,tfidf_96,tfidf_97,tfidf_98,tfidf_99,tfidf_100,tfidf_101,tfidf_102,tfidf_103,tfidf_104,tfidf_105,tfidf_106,tfidf_107,tfidf_108,tfidf_109,tfidf_110,tfidf_111,tfidf_112,tfidf_113,tfidf_114,tfidf_115,tfidf_116,tfidf_117,tfidf_118,tfidf_119,tfidf_120,tfidf_121,tfidf_122,tfidf_123,tfidf_124,tfidf_125,tfidf_126,tfidf_127,tfidf_128,tfidf_129,tfidf_130,tfidf_131,tfidf_132,tfidf_133,tfidf_134,tfidf_135,tfidf_136,tfidf_137,tfidf_138,tfidf_139,tfidf_140,tfidf_141,tfidf_142,tfidf_143,tfidf_144,tfidf_145,tfidf_146,tfidf_147,tfidf_148,tfidf_149,tfidf_150,tfidf_151,tfidf_152,tfidf_153,tfidf_154,tfidf_155,tfidf_156,tfidf_157,tfidf_158,tfidf_159,tfidf_160,tfidf_161,tfidf_162,tfidf_163,tfidf_164,tfidf_165,tfidf_166,tfidf_167,tfidf_168,tfidf_169,tfidf_170,tfidf_171,tfidf_172,tfidf_173,tfidf_174,tfidf_175,tfidf_176,tfidf_177,tfidf_178,tfidf_179,tfidf_180,tfidf_181,tfidf_182,tfidf_183,tfidf_184,tfidf_185,tfidf_186,tfidf_187,tfidf_188,tfidf_189,tfidf_190,tfidf_191,tfidf_192,tfidf_193,tfidf_194,tfidf_195,tfidf_196,tfidf_197,tfidf_198,tfidf_199,tfidf_200,tfidf_201,tfidf_202,tfidf_203,tfidf_204,tfidf_205,tfidf_206,tfidf_207,tfidf_208,tfidf_209,tfidf_210,tfidf_211,tfidf_212,tfidf_213,tfidf_214,tfidf_215,tfidf_216,tfidf_217,tfidf_218,tfidf_219,tfidf_220,tfidf_221,tfidf_222,tfidf_223,tfidf_224,tfidf_225,tfidf_226,tfidf_227,tfidf_228,tfidf_229,tfidf_230,tfidf_231,tfidf_232,tfidf_233,tfidf_234,tfidf_235,tfidf_236,tfidf_237,tfidf_238,tfidf_239,tfidf_240,tfidf_241,tfidf_242,tfidf_243,tfidf_244,tfidf_245,tfidf_246,tfidf_247,tfidf_248,tfidf_249,tfidf_250,tfidf_251,tfidf_252,tfidf_253,tfidf_254,tfidf_255,tfidf_256,tfidf_257,tfidf_258,tfidf_259,tfidf_260,tfidf_261,tfidf_262,tfidf_263,tfidf_264,tfidf_265,tfidf_266,tfidf_267,tfidf_268,tfidf_269,tfidf_270,tfidf_271,tfidf_272,tfidf_273,tfidf_274,tfidf_275,tfidf_276,tfidf_277,tfidf_278,tfidf_279,tfidf_280,tfidf_281,tfidf_282,tfidf_283,tfidf_284,tfidf_285,tfidf_286,tfidf_287,tfidf_288,tfidf_289,tfidf_290,tfidf_291,tfidf_292,tfidf_293,tfidf_294,tfidf_295,tfidf_296,tfidf_297,tfidf_298,tfidf_299,tfidf_300,tfidf_301,tfidf_302,tfidf_303,tfidf_304,tfidf_305,tfidf_306,tfidf_307,tfidf_308,tfidf_309,tfidf_310,tfidf_311,tfidf_312,tfidf_313,tfidf_314,tfidf_315,tfidf_316,tfidf_317,tfidf_318,tfidf_319,tfidf_320,tfidf_321,tfidf_322,tfidf_323,tfidf_324,tfidf_325,tfidf_326,tfidf_327,tfidf_328,tfidf_329,tfidf_330,tfidf_331,tfidf_332,tfidf_333,tfidf_334,tfidf_335,tfidf_336,tfidf_337,tfidf_338,tfidf_339,tfidf_340,tfidf_341,tfidf_342,tfidf_343,tfidf_344,tfidf_345,tfidf_346,tfidf_347,tfidf_348,tfidf_349,tfidf_350,tfidf_351,tfidf_352,tfidf_353,tfidf_354,tfidf_355,tfidf_356,tfidf_357,tfidf_358,tfidf_359,tfidf_360,tfidf_361,tfidf_362,tfidf_363,tfidf_364,tfidf_365,tfidf_366,tfidf_367,tfidf_368,tfidf_369,tfidf_370,tfidf_371,tfidf_372,tfidf_373,tfidf_374,tfidf_375,tfidf_376,tfidf_377,tfidf_378,tfidf_379,tfidf_380,tfidf_381,tfidf_382,tfidf_383,tfidf_384,tfidf_385,tfidf_386,tfidf_387,tfidf_388,tfidf_389,tfidf_390,tfidf_391,tfidf_392,tfidf_393,tfidf_394,tfidf_395,tfidf_396,tfidf_397,tfidf_398,tfidf_399,tfidf_400,tfidf_401,tfidf_402,tfidf_403,tfidf_404,tfidf_405,tfidf_406,tfidf_407,tfidf_408,tfidf_409,tfidf_410,tfidf_411,tfidf_412,tfidf_413,tfidf_414,tfidf_415,tfidf_416,tfidf_417,tfidf_418,tfidf_419,tfidf_420,tfidf_421,tfidf_422,tfidf_423,tfidf_424,tfidf_425,tfidf_426,tfidf_427,tfidf_428,tfidf_429,tfidf_430,tfidf_431,tfidf_432,tfidf_433,tfidf_434,tfidf_435,tfidf_436,tfidf_437,tfidf_438,tfidf_439,tfidf_440,tfidf_441,tfidf_442,tfidf_443,tfidf_444,tfidf_445,tfidf_446,tfidf_447,tfidf_448,tfidf_449,tfidf_450,tfidf_451,tfidf_452,tfidf_453,tfidf_454,tfidf_455,tfidf_456,tfidf_457,tfidf_458,tfidf_459,tfidf_460,tfidf_461,tfidf_462,tfidf_463,tfidf_464,tfidf_465,tfidf_466,tfidf_467,tfidf_468,tfidf_469,tfidf_470,tfidf_471,tfidf_472,tfidf_473,tfidf_474,tfidf_475,tfidf_476,tfidf_477,tfidf_478,tfidf_479,tfidf_480,tfidf_481,tfidf_482,tfidf_483,tfidf_484,tfidf_485,tfidf_486,tfidf_487,tfidf_488,tfidf_489,tfidf_490,tfidf_491,tfidf_492,tfidf_493,tfidf_494,tfidf_495,tfidf_496,tfidf_497,tfidf_498,tfidf_499
+numpy,Fundamental package for array computing in Python,"<h1 align=""center"">
+<img src=""https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.svg"" width=""300"">
+</h1><br>
+
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](
+https://numfocus.org)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/numpy.svg?label=PyPI%20downloads)](
+https://pypi.org/project/numpy/)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/numpy.svg?label=Conda%20downloads)](
+https://anaconda.org/conda-forge/numpy)
+[![Stack Overflow](https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg)](
+https://stackoverflow.com/questions/tagged/numpy)
+[![Nature Paper](https://img.shields.io/badge/DOI-10.1038%2Fs41586--020--2649--2-blue)](
+https://doi.org/10.1038/s41586-020-2649-2)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/numpy/numpy/badge)](https://securityscorecards.dev/viewer/?uri=github.com/numpy/numpy)
+
+
+NumPy is the fundamental package for scientific computing with Python.
+
+- **Website:** https://www.numpy.org
+- **Documentation:** https://numpy.org/doc
+- **Mailing list:** https://mail.python.org/mailman/listinfo/numpy-discussion
+- **Source code:** https://github.com/numpy/numpy
+- **Contributing:** https://www.numpy.org/devdocs/dev/index.html
+- **Bug reports:** https://github.com/numpy/numpy/issues
+- **Report a security vulnerability:** https://tidelift.com/docs/security
+
+It provides:
+
+- a powerful N-dimensional array object
+- sophisticated (broadcasting) functions
+- tools for integrating C/C++ and Fortran code
+- useful linear algebra, Fourier transform, and random number capabilities
+
+Testing:
+
+NumPy requires `pytest` and `hypothesis`.  Tests can then be run after installation with:
+
+    python -c ""import numpy, sys; sys.exit(numpy.test() is False)""
+
+Code of Conduct
+----------------------
+
+NumPy is a community-driven open source project developed by a diverse group of
+[contributors](https://numpy.org/teams/). The NumPy leadership has made a strong
+commitment to creating an open, inclusive, and positive community. Please read the
+[NumPy Code of Conduct](https://numpy.org/code-of-conduct/) for guidance on how to interact
+with others in a way that makes our community thrive.
+
+Call for Contributions
+----------------------
+
+The NumPy project welcomes your expertise and enthusiasm!
+
+Small improvements or fixes are always appreciated. If you are considering larger contributions
+to the source code, please contact us through the [mailing
+list](https://mail.python.org/mailman/listinfo/numpy-discussion) first.
+
+Writing code isn’t the only way to contribute to NumPy. You can also:
+- review pull requests
+- help us stay on top of new and old issues
+- develop tutorials, presentations, and other educational materials
+- maintain and improve [our website](https://github.com/numpy/numpy.org)
+- develop graphic design for our brand assets and promotional materials
+- translate website content
+- help with outreach and onboard new contributors
+- write grant proposals and help with other fundraising efforts
+
+For more information about the ways you can contribute to NumPy, visit [our website](https://numpy.org/contribute/). 
+If you’re unsure where to start or how your skills fit in, reach out! You can
+ask on the mailing list or here, on GitHub, by opening a new issue or leaving a
+comment on a relevant issue that is already open.
+
+Our preferred channels of communication are all public, but if you’d like to
+speak to us in private first, contact our community coordinators at
+numpy-team@googlegroups.com or on Slack (write numpy-team@googlegroups.com for
+an invitation).
+
+We also have a biweekly community call, details of which are announced on the
+mailing list. You are very welcome to join.
+
+If you are new to contributing to open source, [this
+guide](https://opensource.guide/how-to-contribute/) helps explain why, what,
+and how to successfully get involved.
+",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01845595021036894,0.0,0.0,0.02432839864133204,0.03926538968558733,0.0,0.020966777876529688,0.0,0.0,0.0,0.0,0.01845595021036894,0.0,0.0,0.0,0.0,0.0,0.05886389217577424,0.0,0.05886389217577424,0.02432839864133204,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05340961105525543,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.041933555753059376,0.0,0.0,0.020966777876529688,0.0,0.0,0.0,0.0,0.05311555443399509,0.026557777216997546,0.020966777876529688,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09829186851628065,0.0,0.0,0.0,0.02432839864133204,0.02432839864133204,0.11530867836165061,0.0,0.0,0.0,0.09816347421396833,0.0,0.0,0.0,0.05311555443399509,0.08701658133564079,0.07967333165099263,0.0,0.05311555443399509,0.026557777216997546,0.09731359456532816,0.03926538968558733,0.05311555443399509,0.03926538968558733,0.0,0.0,0.0,0.0,0.0,0.0,0.026557777216997546,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02432839864133204,0.0,0.05220994880138448,0.026557777216997546,0.0,0.04865679728266408,0.0,0.0,0.0,0.0,0.0,0.04865679728266408,0.0,0.0,0.0,0.0,0.02808339100465161,0.0,0.0,0.013352402763813857,0.041933555753059376,0.0,0.07382380084147576,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04865679728266408,0.026557777216997546,0.0,0.020966777876529688,0.0,0.03691190042073788,0.0,0.0,0.0,0.0,0.0,0.026557777216997546,0.0,0.05311555443399509,0.026557777216997546,0.0,0.0,0.0,0.0,0.01845595021036894,0.0,0.0,0.08011441658288314,0.019632694842793664,0.0,0.0,0.0,0.0,0.0,0.0,0.026557777216997546,0.026557777216997546,0.0,0.03926538968558733,0.0,0.08386711150611875,0.0,0.0,0.0,0.016451093038416558,0.2857580443941969,0.0,0.0,0.0,0.0,0.0,0.0,0.08011441658288314,0.020966777876529688,0.026557777216997546,0.0,0.019632694842793664,0.0,0.0,0.01845595021036894,0.0,0.0,0.0,0.01740331626712816,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026557777216997546,0.07853077937117466,0.0,0.0,0.02432839864133204,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.041933555753059376,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02432839864133204,0.0,0.0,0.0,0.09731359456532816,0.05886389217577424,0.0,0.016451093038416558,0.0,0.0,0.05886389217577424,0.11772778435154849,0.05886389217577424,0.016451093038416558,0.0,0.019632694842793664,0.0,0.0,0.05886389217577424,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07382380084147576,0.0,0.0,0.026557777216997546,0.0,0.07298519592399612,0.7757707814315984,0.02943194608788712,0.0,0.0,0.06961326506851263,0.0,0.026557777216997546,0.0,0.022506863713683243,0.0,0.18254204153023545,0.0,0.031163562678958725,0.0,0.0,0.0,0.026557777216997546,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03926538968558733,0.0,0.0,0.0,0.0,0.0,0.04865679728266408,0.026557777216997546,0.0,0.0,0.0,0.0,0.0,0.0,0.05340961105525543,0.022506863713683243,0.0,0.0,0.0,0.050830449874359154,0.026557777216997546,0.05239116946462141,0.0,0.0,0.0,0.04865679728266408,0.0,0.0,0.0,0.02943194608788712,0.0,0.01845595021036894,0.022506863713683243,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05311555443399509,0.0,0.026557777216997546,0.0,0.0,0.0,0.02432839864133204,0.0,0.0,0.01740331626712816,0.0,0.0,0.0,0.020966777876529688,0.0,0.0,0.0,0.0,0.05886389217577424,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06676201381906928,0.0,0.02943194608788712,0.0,0.026557777216997546,0.0,0.0,0.06232712535791745,0.0,0.0,0.0,0.0,0.0,0.01845595021036894,0.0,0.026557777216997546,0.05311555443399509,0.0,0.020966777876529688,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015581781339479362,0.0,0.0,0.0,0.06676201381906928,0.0,0.0,0.0,0.026557777216997546,0.0,0.0,0.06752059114104973,0.0,0.0,0.0,0.031163562678958725,0.02432839864133204,0.0,0.0,0.0,0.02432839864133204,0.0,0.0,0.0,0.02432839864133204,0.0,0.022506863713683243,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.022506863713683243,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.058898084528380995,0.0,0.09002745485473297,0.04865679728266408,0.0,0.0,0.0,0.0,0.020966777876529688,0.0,0.0,0.0,0.0,0.0,0.0,0.05311555443399509,0.02432839864133204,0.0,0.032902186076833116,0.0,0.0,0.0,0.0
+pandas,"Powerful data structures for data analysis, time series, and statistics","<div align=""center"">
+  <img src=""https://pandas.pydata.org/static/img/pandas.svg""><br>
+</div>
+
+-----------------
+
+# pandas: powerful Python data analysis toolkit
+
+| | |
+| --- | --- |
+| Testing | [![CI - Test](https://github.com/pandas-dev/pandas/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/pandas-dev/pandas/actions/workflows/unit-tests.yml) [![Coverage](https://codecov.io/github/pandas-dev/pandas/coverage.svg?branch=main)](https://codecov.io/gh/pandas-dev/pandas) |
+| Package | [![PyPI Latest Release](https://img.shields.io/pypi/v/pandas.svg)](https://pypi.org/project/pandas/) [![PyPI Downloads](https://img.shields.io/pypi/dm/pandas.svg?label=PyPI%20downloads)](https://pypi.org/project/pandas/) [![Conda Latest Release](https://anaconda.org/conda-forge/pandas/badges/version.svg)](https://anaconda.org/conda-forge/pandas) [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pandas.svg?label=Conda%20downloads)](https://anaconda.org/conda-forge/pandas) |
+| Meta | [![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3509134.svg)](https://doi.org/10.5281/zenodo.3509134) [![License - BSD 3-Clause](https://img.shields.io/pypi/l/pandas.svg)](https://github.com/pandas-dev/pandas/blob/main/LICENSE) [![Slack](https://img.shields.io/badge/join_Slack-information-brightgreen.svg?logo=slack)](https://pandas.pydata.org/docs/dev/development/community.html?highlight=slack#community-slack) |
+
+
+## What is it?
+
+**pandas** is a Python package that provides fast, flexible, and expressive data
+structures designed to make working with ""relational"" or ""labeled"" data both
+easy and intuitive. It aims to be the fundamental high-level building block for
+doing practical, **real world** data analysis in Python. Additionally, it has
+the broader goal of becoming **the most powerful and flexible open source data
+analysis / manipulation tool available in any language**. It is already well on
+its way towards this goal.
+
+## Table of Contents
+
+- [Main Features](#main-features)
+- [Where to get it](#where-to-get-it)
+- [Dependencies](#dependencies)
+- [Installation from sources](#installation-from-sources)
+- [License](#license)
+- [Documentation](#documentation)
+- [Background](#background)
+- [Getting Help](#getting-help)
+- [Discussion and Development](#discussion-and-development)
+- [Contributing to pandas](#contributing-to-pandas)
+
+## Main Features
+Here are just a few of the things that pandas does well:
+
+  - Easy handling of [**missing data**][missing-data] (represented as
+    `NaN`, `NA`, or `NaT`) in floating point as well as non-floating point data
+  - Size mutability: columns can be [**inserted and
+    deleted**][insertion-deletion] from DataFrame and higher dimensional
+    objects
+  - Automatic and explicit [**data alignment**][alignment]: objects can
+    be explicitly aligned to a set of labels, or the user can simply
+    ignore the labels and let `Series`, `DataFrame`, etc. automatically
+    align the data for you in computations
+  - Powerful, flexible [**group by**][groupby] functionality to perform
+    split-apply-combine operations on data sets, for both aggregating
+    and transforming data
+  - Make it [**easy to convert**][conversion] ragged,
+    differently-indexed data in other Python and NumPy data structures
+    into DataFrame objects
+  - Intelligent label-based [**slicing**][slicing], [**fancy
+    indexing**][fancy-indexing], and [**subsetting**][subsetting] of
+    large data sets
+  - Intuitive [**merging**][merging] and [**joining**][joining] data
+    sets
+  - Flexible [**reshaping**][reshape] and [**pivoting**][pivot-table] of
+    data sets
+  - [**Hierarchical**][mi] labeling of axes (possible to have multiple
+    labels per tick)
+  - Robust IO tools for loading data from [**flat files**][flat-files]
+    (CSV and delimited), [**Excel files**][excel], [**databases**][db],
+    and saving/loading data from the ultrafast [**HDF5 format**][hdfstore]
+  - [**Time series**][timeseries]-specific functionality: date range
+    generation and frequency conversion, moving window statistics,
+    date shifting and lagging
+
+
+   [missing-data]: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
+   [insertion-deletion]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html#column-selection-addition-deletion
+   [alignment]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html?highlight=alignment#intro-to-data-structures
+   [groupby]: https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html#group-by-split-apply-combine
+   [conversion]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html#dataframe
+   [slicing]: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#slicing-ranges
+   [fancy-indexing]: https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html#advanced
+   [s",85,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.024829235610137362,0.0,0.0,0.017864409588402016,0.03572881917680403,0.0,0.024829235610137362,0.09009059953185349,0.0,0.016364791164846335,0.0,0.0,0.04231066907538253,0.07919101596518682,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03959550798259341,0.0,0.0,0.0,0.0,0.0,0.0,0.017864409588402016,0.017864409588402016,0.012414617805068681,0.0,0.0,0.03959550798259341,0.0,0.044908274893091536,0.0,0.016364791164846335,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014103556358460842,0.0,0.0,0.013206169293840657,0.0,0.0,0.0,0.014103556358460842,0.0,0.0,0.0,0.0,0.014103556358460842,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.030279027393470697,0.0,0.016364791164846335,0.016364791164846335,0.023269132531521974,0.0,0.0,0.0,0.026412338587681314,0.0,0.019797753991296706,0.0,0.0,0.09365240696227979,0.0,0.0,0.0,0.017864409588402016,0.0,0.026412338587681314,0.0,0.0,0.06756794964889012,0.0,0.0,0.0,0.03272958232969267,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.28553620951657965,0.09009059953185349,0.0,0.03572881917680403,0.0,0.06756794964889012,0.026412338587681314,0.0,0.0,0.0,0.015139513696735349,0.07023930522170985,0.0,0.0,0.0,0.0,0.03144382020652197,0.0,0.0,0.0,0.03272958232969267,0.0,0.03959550798259341,0.0,0.0,0.07556252851119585,0.0,0.0,0.017963309957236613,0.04231066907538253,0.0,0.049658471220274725,0.06756794964889012,0.03511965261085492,0.0,0.0,0.0,0.017864409588402016,0.0,0.0,0.0,0.0,0.0,0.06756794964889012,0.017864409588402016,0.0,0.03724385341520605,0.0,0.03724385341520605,0.0,0.0,0.0,0.0,0.04231066907538253,0.07919101596518682,0.049658471220274725,0.0,0.015139513696735349,0.0,0.0,0.0,0.0,0.03572881917680403,0.017864409588402016,0.0,0.0,0.017864409588402016,0.0,0.0,0.024829235610137362,0.03572881917680403,0.0,0.035926619914473226,0.0,0.0,0.0,0.03572881917680403,0.0,0.0,0.0,0.0,0.03572881917680403,0.06756794964889012,0.0,0.0,0.028207112716921685,0.019797753991296706,0.013206169293840657,0.0,0.08852821132247082,0.20700464584872766,0.0,0.0,0.0,0.019797753991296706,0.0,0.0,0.07185323982894645,0.0,0.0,0.0,0.0,0.07919101596518682,0.0,0.012414617805068681,0.0,0.04504529976592674,0.0,0.023413101740569948,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.017864409588402016,0.03572881917680403,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08462133815076506,0.013206169293840657,0.016364791164846335,0.0,0.024829235610137362,0.0,0.0,0.0,0.0,0.0,0.013206169293840657,0.0,0.0,0.049658471220274725,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.011066026415308853,0.0,0.0,0.0,0.0,0.0,0.055330132076544254,0.0,0.026412338587681314,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06756794964889012,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.017864409588402016,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.049094373494539004,0.014103556358460842,0.059393261973890124,0.0,0.0,0.011706550870284974,0.0,0.0,0.0,0.015139513696735349,0.0,0.16057037308629118,0.0,0.020962546804347983,0.0,0.0,0.7324407931244827,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03272958232969267,0.0,0.017864409588402016,0.03272958232969267,0.07145763835360806,0.0,0.0,0.0,0.0,0.0,0.0,0.017963309957236613,0.015139513696735349,0.0,0.0,0.17817978592167039,0.06838343199423441,0.0,0.02819324230289447,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026412338587681314,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.017864409588402016,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06756794964889012,0.0,0.08182395582423167,0.0,0.0,0.053889929871709846,0.0,0.07919101596518682,0.09009059953185349,0.0,0.0,0.0,0.03144382020652197,0.0,0.0,0.017864409588402016,0.0,0.0,0.012414617805068681,0.10597659587714744,0.0,0.0,0.0,0.0,0.0,0.0,0.015139513696735349,0.03959550798259341,0.0,0.0,0.09009059953185349,0.010481273402173991,0.0,0.0,0.0,0.09879820476480139,0.0,0.03572881917680403,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03144382020652197,0.016364791164846335,0.0,0.0,0.0,0.0,0.03572881917680403,0.0,0.0,0.03272958232969267,0.019797753991296706,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.030279027393470697,0.0,0.0,0.0,0.0,0.011066026415308853,0.1576585491807436,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008981654978618307,0.0,0.0,0.0,0.013206169293840657,0.0,0.0,0.0,0.05359322876520605,0.0,0.0,0.0,0.0,0.0,0.0,0.017864409588402016,0.0,0.023413101740569948,0.017864409588402016,0.0,0.0,0.0,0.0,0.0,0.030279027393470697,0.049094373494539004,0.0
+matplotlib,Python plotting package,"[![PyPi](https://img.shields.io/pypi/v/matplotlib)](https://pypi.org/project/matplotlib/)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/matplotlib)](https://anaconda.org/conda-forge/matplotlib)
+[![Downloads](https://img.shields.io/pypi/dm/matplotlib)](https://pypi.org/project/matplotlib)
+[![NUMFocus](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
+
+[![Discourse help forum](https://img.shields.io/badge/help_forum-discourse-blue.svg)](https://discourse.matplotlib.org)
+[![Gitter](https://badges.gitter.im/matplotlib/matplotlib.svg)](https://gitter.im/matplotlib/matplotlib)
+[![GitHub issues](https://img.shields.io/badge/issue_tracking-github-blue.svg)](https://github.com/matplotlib/matplotlib/issues)
+[![Contributing](https://img.shields.io/badge/PR-Welcome-%23FF8300.svg?)](https://matplotlib.org/stable/devel/index.html)
+
+[![GitHub actions status](https://github.com/matplotlib/matplotlib/workflows/Tests/badge.svg)](https://github.com/matplotlib/matplotlib/actions?query=workflow%3ATests)
+[![Azure pipelines status](https://dev.azure.com/matplotlib/matplotlib/_apis/build/status/matplotlib.matplotlib?branchName=main)](https://dev.azure.com/matplotlib/matplotlib/_build/latest?definitionId=1&branchName=main)
+[![AppVeyor status](https://ci.appveyor.com/api/projects/status/github/matplotlib/matplotlib?branch=main&svg=true)](https://ci.appveyor.com/project/matplotlib/matplotlib)
+[![Codecov status](https://codecov.io/github/matplotlib/matplotlib/badge.svg?branch=main&service=github)](https://app.codecov.io/gh/matplotlib/matplotlib)
+[![EffVer Versioning](https://img.shields.io/badge/version_scheme-EffVer-0097a7)](https://jacobtomlinson.dev/effver)
+
+![Matplotlib logotype](https://matplotlib.org/_static/logo2.svg)
+
+Matplotlib is a comprehensive library for creating static, animated, and
+interactive visualizations in Python.
+
+Check out our [home page](https://matplotlib.org/) for more information.
+
+![image](https://matplotlib.org/_static/readme_preview.png)
+
+Matplotlib produces publication-quality figures in a variety of hardcopy
+formats and interactive environments across platforms. Matplotlib can be
+used in Python scripts, Python/IPython shells, web application servers,
+and various graphical user interface toolkits.
+
+## Install
+
+See the [install
+documentation](https://matplotlib.org/stable/users/installing/index.html),
+which is generated from `/doc/install/index.rst`
+
+## Contribute
+
+You've discovered a bug or something else you want to change — excellent!
+
+You've worked out a way to fix it — even better!
+
+You want to tell us about it — best of all!
+
+Start at the [contributing
+guide](https://matplotlib.org/devdocs/devel/contribute.html)!
+
+## Contact
+
+[Discourse](https://discourse.matplotlib.org/) is the discussion forum
+for general questions and discussions and our recommended starting
+point.
+
+Our active mailing lists (which are mirrored on Discourse) are:
+
+-   [Users](https://mail.python.org/mailman/listinfo/matplotlib-users)
+    mailing list: <matplotlib-users@python.org>
+-   [Announcement](https://mail.python.org/mailman/listinfo/matplotlib-announce)
+    mailing list: <matplotlib-announce@python.org>
+-   [Development](https://mail.python.org/mailman/listinfo/matplotlib-devel)
+    mailing list: <matplotlib-devel@python.org>
+
+[Gitter](https://gitter.im/matplotlib/matplotlib) is for coordinating
+development and asking questions directly related to contributing to
+matplotlib.
+
+## Citing Matplotlib
+
+If Matplotlib contributes to a project that leads to publication, please
+acknowledge this by citing Matplotlib.
+
+[A ready-made citation
+entry](https://matplotlib.org/stable/users/project/citing.html) is
+available.
+",13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.032022879463526374,0.016011439731763187,0.0222538454232242,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012640677628866481,0.0,0.04037301646227301,0.0,0.0,0.0111269227116121,0.0,0.016011439731763187,0.012640677628866481,0.0,0.060559524693409514,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0111269227116121,0.053232749163182894,0.0,0.0,0.0,0.06440032699429464,0.0,0.0,0.0,0.0,0.0,0.0,0.014667367883735695,0.0,0.0,0.0,0.0,0.025281355257732962,0.02367274246477973,0.03548849944212193,0.012640677628866481,0.011836371232389864,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013569181221687642,0.0,0.0,0.016011439731763187,0.04400210365120708,0.0,0.0,0.0,0.0,0.0,0.04070754366506293,0.0,0.014667367883735695,0.014667367883735695,0.04866297948567145,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04196919753744949,0.0,0.0,0.016011439731763187,0.0,0.02933473576747139,0.03550911369716959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016011439731763187,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.031476898153087116,0.016011439731763187,0.08074603292454602,0.0,0.0,0.01878822544462864,0.0,0.0,0.10646549832636579,0.02933473576747139,0.0,0.0,0.0,0.0,0.008465609129493158,0.0,0.0,0.00805004087428683,0.0,0.0,0.0111269227116121,0.0,0.0,0.0,0.060559524693409514,0.017744249721060965,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016011439731763187,0.0,0.012640677628866481,0.0,0.0222538454232242,0.0,0.013569181221687642,0.02933473576747139,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07245036786858146,0.0,0.08872124860530482,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.011836371232389864,0.0,0.012640677628866481,0.0,0.0,0.0,0.03967285101520475,0.24516897011588012,0.0,0.0,0.0,0.0,0.011836371232389864,0.0,0.06440032699429464,0.0,0.0,0.0,0.03550911369716959,0.0,0.0,0.0111269227116121,0.0,0.0,0.029754638261403562,0.0,0.0,0.013569181221687642,0.0,0.0,0.032022879463526374,0.016011439731763187,0.0,0.0,0.0,0.0,0.02367274246477973,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0111269227116121,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.00939411272231432,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05866947153494278,0.053232749163182894,0.0,0.009918212753801187,0.0,0.0,0.053232749163182894,0.07097699888424386,0.053232749163182894,0.03967285101520475,0.0,0.0,0.0,0.0,0.0,0.8806291852469753,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04400210365120708,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013569181221687642,0.0,0.16084657346037,0.0,0.00939411272231432,0.014667367883735695,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016011439731763187,0.0,0.016011439731763187,0.011836371232389864,0.0,0.011836371232389864,0.014667367883735695,0.0,0.0,0.014667367883735695,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04830024524572098,0.0,0.0,0.03548849944212193,0.0,0.03830651366508272,0.0,0.06317230884989052,0.0,0.0,0.014667367883735695,0.02933473576747139,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014667367883735695,0.0,0.016011439731763187,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0111269227116121,0.0,0.0,0.016011439731763187,0.0,0.0,0.016011439731763187,0.06440032699429464,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04070754366506293,0.0,0.0,0.0,0.012640677628866481,0.0,0.0,0.013569181221687642,0.0,0.0,0.08800420730241416,0.0,0.00939411272231432,0.0,0.0,0.0,0.07245036786858146,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.00939411272231432,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016011439731763187,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014667367883735695,0.059509276522807124,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016011439731763187,0.032022879463526374,0.011836371232389864,0.013569181221687642,0.0,0.014667367883735695,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020984598768724744,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+scikit-learn,A set of python modules for machine learning and data mining,".. -*- mode: rst -*-
+
+|Azure| |CirrusCI| |Codecov| |CircleCI| |Nightly wheels| |Black| |PythonVersion| |PyPi| |DOI| |Benchmark|
+
+.. |Azure| image:: https://dev.azure.com/scikit-learn/scikit-learn/_apis/build/status/scikit-learn.scikit-learn?branchName=main
+   :target: https://dev.azure.com/scikit-learn/scikit-learn/_build/latest?definitionId=1&branchName=main
+
+.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-learn/tree/main.svg?style=shield
+   :target: https://circleci.com/gh/scikit-learn/scikit-learn
+
+.. |CirrusCI| image:: https://img.shields.io/cirrus/github/scikit-learn/scikit-learn/main?label=Cirrus%20CI
+   :target: https://cirrus-ci.com/github/scikit-learn/scikit-learn/main
+
+.. |Codecov| image:: https://codecov.io/gh/scikit-learn/scikit-learn/branch/main/graph/badge.svg?token=Pk8G9gg3y9
+   :target: https://codecov.io/gh/scikit-learn/scikit-learn
+
+.. |Nightly wheels| image:: https://github.com/scikit-learn/scikit-learn/workflows/Wheel%20builder/badge.svg?event=schedule
+   :target: https://github.com/scikit-learn/scikit-learn/actions?query=workflow%3A%22Wheel+builder%22+event%3Aschedule
+
+.. |PythonVersion| image:: https://img.shields.io/pypi/pyversions/scikit-learn.svg
+   :target: https://pypi.org/project/scikit-learn/
+
+.. |PyPi| image:: https://img.shields.io/pypi/v/scikit-learn
+   :target: https://pypi.org/project/scikit-learn
+
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+
+.. |DOI| image:: https://zenodo.org/badge/21369/scikit-learn/scikit-learn.svg
+   :target: https://zenodo.org/badge/latestdoi/21369/scikit-learn/scikit-learn
+
+.. |Benchmark| image:: https://img.shields.io/badge/Benchmarked%20by-asv-blue
+   :target: https://scikit-learn.org/scikit-learn-benchmarks
+
+.. |PythonMinVersion| replace:: 3.9
+.. |NumPyMinVersion| replace:: 1.19.5
+.. |SciPyMinVersion| replace:: 1.6.0
+.. |JoblibMinVersion| replace:: 1.2.0
+.. |ThreadpoolctlMinVersion| replace:: 3.1.0
+.. |MatplotlibMinVersion| replace:: 3.3.4
+.. |Scikit-ImageMinVersion| replace:: 0.17.2
+.. |PandasMinVersion| replace:: 1.1.5
+.. |SeabornMinVersion| replace:: 0.9.0
+.. |PytestMinVersion| replace:: 7.1.2
+.. |PlotlyMinVersion| replace:: 5.14.0
+
+.. image:: https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png
+  :target: https://scikit-learn.org/
+
+**scikit-learn** is a Python module for machine learning built on top of
+SciPy and is distributed under the 3-Clause BSD license.
+
+The project was started in 2007 by David Cournapeau as a Google Summer
+of Code project, and since then many volunteers have contributed. See
+the `About us <https://scikit-learn.org/dev/about.html#authors>`__ page
+for a list of core contributors.
+
+It is currently maintained by a team of volunteers.
+
+Website: https://scikit-learn.org
+
+Installation
+------------
+
+Dependencies
+~~~~~~~~~~~~
+
+scikit-learn requires:
+
+- Python (>= |PythonMinVersion|)
+- NumPy (>= |NumPyMinVersion|)
+- SciPy (>= |SciPyMinVersion|)
+- joblib (>= |JoblibMinVersion|)
+- threadpoolctl (>= |ThreadpoolctlMinVersion|)
+
+=======
+
+**Scikit-learn 0.20 was the last version to support Python 2.7 and Python 3.4.**
+scikit-learn 1.0 and later require Python 3.7 or newer.
+scikit-learn 1.1 and later require Python 3.8 or newer.
+
+Scikit-learn plotting capabilities (i.e., functions start with ``plot_`` and
+classes end with ``Display``) require Matplotlib (>= |MatplotlibMinVersion|).
+For running the examples Matplotlib >= |MatplotlibMinVersion| is required.
+A few examples require scikit-image >= |Scikit-ImageMinVersion|, a few examples
+require pandas >= |PandasMinVersion|, some examples require seaborn >=
+|SeabornMinVersion| and plotly >= |PlotlyMinVersion|.
+
+User installation
+~~~~~~~~~~~~~~~~~
+
+If you already have a working installation of NumPy and SciPy,
+the easiest way to install scikit-learn is using ``pip``::
+
+    pip install -U scikit-learn
+
+or ``conda``::
+
+    conda install -c conda-forge scikit-learn
+
+The documentation includes more detailed `installation instructions <https://scikit-learn.org/stable/install.html>`_.
+
+
+Changelog
+---------
+
+See the `changelog <https://scikit-learn.org/dev/whats_new.html>`__
+for a history of notable changes to scikit-learn.
+
+Development
+-----------
+
+We welcome new contributors of all experience levels. The scikit-learn
+community goals are to be helpful, welcoming, and effective. The
+`Development Guide <https://scikit-learn.org/stable/developers/index.html>`_
+has detailed information about contributing code, documentation, tests, and
+more. We've included some basic information in this README.
+
+Important links
+~~~~~~~~~~~~~~~
+
+- Official source code repo: https://github.com/scikit-learn/scikit-learn
+- Download releases: https://pypi.org/project/scikit-learn/
+- Issue tracker: https://github.com/scikit-learn/scikit-learn/issues
+
+Source code
+~~~~~~~~~~~
+
+You can check the latest sources with the command::
+
+    git clone https://github.com/scikit-learn/scikit-learn.git
+",56,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0.0,0.0,0.0,0.006503688054221048,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008573078807563375,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.041486066878686695,0.0,0.0,0.0,0.028231500852676502,0.0,0.0,0.009358689011623535,0.0,0.0,0.031114550159015018,0.0,0.041486066878686695,0.0,0.0,0.0,0.007388478038615514,0.006918360824874153,0.020743033439343347,0.0,0.006918360824874153,0.0,0.007931188532922292,0.0,0.0,0.009358689011623535,0.0,0.0,0.01871737802324707,0.0,0.0,0.007931188532922292,0.041486066878686695,0.035397051595118745,0.0,0.0,0.010371516719671674,0.0,0.0,0.024740749259330657,0.0,0.03172475413168917,0.0,0.0,0.0,0.048760318409660004,0.0,0.009358689011623535,0.0,0.006918360824874153,0.0,0.0,0.0,0.0,0.018398251862441976,0.0,0.0,0.0,0.0,0.0,0.006918360824874153,0.0,0.013836721649748305,0.0,0.0,0.009358689011623535,0.0,0.0,0.0,0.0,0.0,0.0,0.009358689011623535,0.0,0.0,0.0,0.006503688054221048,0.0,0.0,0.0,0.0,0.0,0.006918360824874153,0.0,0.0,0.0,0.0,0.024531002483255973,0.0,0.0,0.0,0.008573078807563375,0.01098172069234582,0.0,0.0,0.0,0.0,0.008573078807563375,0.0,0.0,0.0,0.004948149851866131,0.0,0.0,0.0094105002842255,0.014776956077231028,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020743033439343347,0.03172475413168917,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.006503688054221048,0.0,0.0,0.0,0.0,0.0,0.009358689011623535,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01871737802324707,0.037642001136902,0.006918360824874153,0.0,0.0,0.009358689011623535,0.008573078807563375,0.0,0.007931188532922292,0.0,0.0,0.0,0.006918360824874153,0.0,0.0,0.0,0.0,0.0,0.02318878758411865,0.12006325230272881,0.0,0.0,0.0,0.0,0.08302032989848983,0.0,0.023526250710563752,0.0,0.0,0.0,0.006918360824874153,0.0,0.0,0.013007376108442097,0.0,0.0,0.02318878758411865,0.024531002483255973,0.0,0.0,0.009358689011623535,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013836721649748305,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.007388478038615514,0.0,0.0,0.0,0.013007376108442097,0.009358689011623535,0.0,0.0,0.6119194864606288,0.014776956077231028,0.006918360824874153,0.0,0.0,0.006503688054221048,0.0,0.0,0.0,0.0,0.009358689011623535,0.0,0.008573078807563375,0.0,0.0,0.011594393792059326,0.0,0.01871737802324707,0.0,0.0,0.0,0.040580378272207646,0.010371516719671674,0.0,0.007388478038615514,0.0,0.0,0.01871737802324707,0.035397051595118745,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01871737802324707,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.006503688054221048,0.0,0.0,0.0,0.0,0.0,0.014776956077231028,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05937779822239357,0.0,0.0,0.008573078807563375,0.0,0.009358689011623535,0.0,0.0,0.0,0.0,0.0,0.013836721649748305,0.0,0.0,0.0,0.0,0.010371516719671674,0.006918360824874153,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.023526250710563752,0.0,0.010371516719671674,0.0,0.0,0.031346228466873405,0.0,0.025846957038452283,0.0,0.008573078807563375,0.008573078807563375,0.0,0.0,0.0,0.0,0.0,0.0,0.006503688054221048,0.0,0.007931188532922292,0.0,0.0,0.0,0.0,0.0,0.006918360824874153,0.0,0.12978918918210205,0.0,0.0,0.0,0.07079410319023749,0.008573078807563375,0.0,0.008573078807563375,0.0,0.0,0.0,0.007931188532922292,0.0,0.0,0.0,0.7315390662991207,0.025719236422690125,0.010371516719671674,0.02359803439674583,0.0,0.013007376108442097,0.0,0.0,0.0,0.008573078807563375,0.0,0.0,0.028231500852676502,0.0,0.0,0.0,0.0,0.0,0.0,0.01647258103851873,0.0,0.0,0.0,0.0,0.0,0.0,0.015862377065844584,0.0,0.0,0.0,0.007388478038615514,0.008573078807563375,0.0,0.0,0.0,0.0,0.008573078807563375,0.0,0.01098172069234582,0.0,0.004948149851866131,0.0,0.028231500852676502,0.0,0.0,0.0,0.0,0.0,0.08127325842477065,0.007931188532922292,0.0,0.0,0.0,0.00549086034617291,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.007931188532922292,0.0,0.0,0.009358689011623535,0.0,0.0,0.0,0.010371516719671674,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.005797196896029663,0.0,0.007388478038615514,0.0,0.0,0.0,0.0,0.0,0.0,0.00470525014211275,0.0,0.0,0.0,0.006918360824874153,0.0,0.007931188532922292,0.008573078807563375,0.0,0.0,0.0342923152302535,0.0,0.0,0.0,0.0,0.0,0.0,0.012265501241627987,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01714615761512675,0.0
+tensorflow,TensorFlow is an open source machine learning framework for everyone.,"[![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/tensorflow)
+[![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/tensorflow)
+
+TensorFlow is an open source software library for high performance numerical
+computation. Its flexible architecture allows easy deployment of computation
+across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters
+of servers to mobile and edge devices.
+
+Originally developed by researchers and engineers from the Google Brain team
+within Google's AI organization, it comes with strong support for machine
+learning and deep learning and the flexible numerical computation core is used
+across many other scientific domains. TensorFlow is licensed under [Apache
+2.0](https://github.com/tensorflow/tensorflow/blob/master/LICENSE).
+",34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.14497614007999224,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08033296431399718,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.10933406423705969,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05722772846570134,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07248807003999612,0.0,0.0,0.0,0.0,0.0,0.0,0.03147290334203531,0.07248807003999612,0.0,0.0,0.0,0.0,0.24099889294199156,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07248807003999612,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06640309730232745,0.0,0.0,0.0,0.07248807003999612,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04750144555367313,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.16066592862799436,0.0,0.0,0.0,0.0,0.05722772846570134,0.0,0.0,0.0,0.0,0.0,0.24099889294199156,0.0,0.0,0.0,0.0,0.0,0.0,0.03644468807901989,0.0,0.0,0.0,0.0,0.1328061946046549,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.053586418291341795,0.0,0.0,0.1499926351233351,0.0,0.0,0.0,0.0,0.0,0.0,0.03644468807901989,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.22891091386280535,0.0,0.0,0.042529660816688554,0.05037455509068963,0.07248807003999612,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.21746421011998834,0.0,0.0,0.0,0.0,0.0,0.0,0.05722772846570134,0.06143131256534287,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.16066592862799436,0.0,0.0,0.0,0.0,0.0,0.09500289110734626,0.0,0.0,0.0,0.0,0.0,0.0,0.07248807003999612,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06640309730232745,0.0,0.0,0.0,0.0,0.07248807003999612,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06936953308537498,0.0,0.028599793805018828,0.0,0.06640309730232745,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05722772846570134,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07248807003999612,0.0,0.0,0.0,0.03644468807901989,0.0,0.0,0.0,0.0,0.04750144555367313,0.0,0.08505932163337711,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.042529660816688554,0.0,0.03832607671704702,0.0,0.07288937615803978,0.0,0.0,0.0,0.0,0.0,0.0,0.06143131256534287,0.0,0.0,0.7248807003999611,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06640309730232745,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+pytorch,,"You tried to install ""pytorch"". The package named for PyTorch is ""torch""",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2538177181735837,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.24040543539756465,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8194998833499416,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.45409441062613265,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+keras,Multi-backend Keras,"# Keras 3: Deep Learning for Humans
+
+Keras 3 is a multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only).
+Effortlessly build and train models for computer vision, natural language processing, audio processing,
+timeseries forecasting, recommender systems, etc.
+
+- **Accelerated model development**: Ship deep learning solutions faster thanks to the high-level UX of Keras
+and the availability of easy-to-debug runtimes like PyTorch or JAX eager execution.
+- **State-of-the-art performance**: By picking the backend that is the fastest for your model architecture (often JAX!),
+leverage speedups ranging from 20% to 350% compared to other frameworks. [Benchmark here](https://keras.io/getting_started/benchmarks/).
+- **Datacenter-scale training**: Scale confidently from your laptop to large clusters of GPUs or TPUs.
+
+Join nearly three million developers, from burgeoning startups to global enterprises, in harnessing the power of Keras 3.
+
+
+## Installation
+
+### Install with pip
+
+Keras 3 is available on PyPI as `keras`. Note that Keras 2 remains available as the `tf-keras` package.
+
+1. Install `keras`:
+
+```
+pip install keras --upgrade
+```
+
+2. Install backend package(s).
+
+To use `keras`, you should also install the backend of choice: `tensorflow`, `jax`, or `torch`.
+Note that `tensorflow` is required for using certain Keras 3 features: certain preprocessing layers
+as well as `tf.data` pipelines.
+
+### Local installation
+
+#### Minimal installation
+
+Keras 3 is compatible with Linux and MacOS systems. For Windows users, we recommend using WSL2 to run Keras.
+To install a local development version:
+
+1. Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+2. Run installation command from the root directory.
+
+```
+python pip_build.py --install
+```
+
+3. Run API generation script when creating PRs that update `keras_export` public APIs:
+
+```
+./shell/api_gen.sh
+```
+
+#### Adding GPU support
+
+The `requirements.txt` file will install a CPU-only version of TensorFlow, JAX, and PyTorch. For GPU support, we also
+provide a separate `requirements-{backend}-cuda.txt` for TensorFlow, JAX, and PyTorch. These install all CUDA
+dependencies via `pip` and expect a NVIDIA driver to be pre-installed. We recommend a clean python environment for each
+backend to avoid CUDA version mismatches. As an example, here is how to create a Jax GPU environment with `conda`:
+
+```shell
+conda create -y -n keras-jax python=3.10
+conda activate keras-jax
+pip install -r requirements-jax-cuda.txt
+python pip_build.py --install
+```
+
+## Configuring your backend
+
+You can export the environment variable `KERAS_BACKEND` or you can edit your local config file at `~/.keras/keras.json`
+to configure your backend. Available backend options are: `""tensorflow""`, `""jax""`, `""torch""`, `""openvino""`. Example:
+
+```
+export KERAS_BACKEND=""jax""
+```
+
+In Colab, you can do:
+
+```python
+import os
+os.environ[""KERAS_BACKEND""] = ""jax""
+
+import keras
+```
+
+**Note:** The backend must be configured before importing `keras`, and the backend cannot be changed after 
+the package has been imported.
+
+**Note:** The OpenVINO backend is an inference-only backend, meaning it is designed only for running model
+predictions using `model.predict()` method.
+To use `openvino` backend, install the required dependencies from the `requirements-openvino.txt` file.
+
+## Backwards compatibility
+
+Keras 3 is intended to work as a drop-in replacement for `tf.keras` (when using the TensorFlow backend). Just take your
+existing `tf.keras` code, make sure that your calls to `model.save()` are using the up-to-date `.keras` format, and you're
+done.
+
+If your `tf.keras` model does not include custom components, you can start running it on top of JAX or PyTorch immediately.
+
+If it does include custom components (e.g. custom layers or a custom `train_step()`), it is usually possible to convert it
+to a backend-agnostic implementation in just a few minutes.
+
+In addition, Keras models can consume datasets in any format, regardless of the backend you're using:
+you can train your models with your existing `tf.data.Dataset` pipelines or PyTorch `DataLoaders`.
+
+## Why use Keras 3?
+
+- Run your high-level Keras workflows on top of any framework -- benefiting at will from the advantages of each framework,
+e.g. the scalability and performance of JAX or the production ecosystem options of TensorFlow.
+- Write custom components (e.g. layers, models, metrics) that you can use in low-level workflows in any framework.
+    - You can take a Keras model and train it in a training loop written from scratch in native TF, JAX, or PyTorch.
+    - You can take a Keras model and use it as part of a PyTorch-native `Module` or as part of a JAX-native model function.
+- Make your ML code future-proof by avoiding framework lock-in.
+- As a PyTorch user: get access to power and usability of Keras, at last!
+- As a JAX user: get access to a fully-featured, battle-tested, well-documented modeling and traini",8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.01670237960225684,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.0,0.0246942896764522,0.0,0.0,0.0,0.0,0.0,0.0,0.011607081564666569,0.01850996534749244,0.0,0.0,0.0,0.0,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.034821244693999706,0.0,0.3790370585931764,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03701993069498488,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0123471448382261,0.0,0.0,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01850996534749244,0.01670237960225684,0.017661849229538992,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01670237960225684,0.0,0.0,0.06317284309886273,0.0,0.015300307171885213,0.0,0.03283521722356342,0.0,0.01850996534749244,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03701993069498488,0.01670237960225684,0.0,0.0842304574651503,0.0,0.10528807183143787,0.0,0.0,0.023214163129333137,0.0,0.01850996534749244,0.01670237960225684,0.04590092151565564,0.0,0.0370414345146783,0.0,0.0,0.0,0.014154730583461703,0.0,0.0,0.0,0.0,0.015300307171885213,0.01959899163886193,0.015300307171885213,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010945072407854474,0.0,0.0,0.05552989604247732,0.01670237960225684,0.0,0.028309461166923407,0.0,0.03701993069498488,0.0,0.0,0.0,0.0,0.011607081564666569,0.0,0.034821244693999706,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028309461166923407,0.0,0.07911695627280141,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.01670237960225684,0.0,0.0,0.023214163129333137,0.0,0.0,0.0,0.0,0.0,0.01850996534749244,0.0,0.0,0.06317284309886273,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0246942896764522,0.0,0.0,0.00691212754868616,0.0,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.02637231875760047,0.0,0.03701993069498488,0.0,0.0,0.03701993069498488,0.0,0.0,0.0,0.14484697193458843,0.0437802896314179,0.015300307171885213,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.333179376254864,0.0,0.015300307171885213,0.0,0.01670237960225684,0.0,0.0,0.69490127408749,0.06317284309886273,0.0,0.0,0.0123471448382261,0.015300307171885213,0.0,0.0,0.0,0.0,0.06317284309886273,0.0,0.039558478136400704,0.0370414345146783,0.0,0.0,0.0,0.0,0.0,0.015300307171885213,0.0,0.0,0.0,0.0,0.0,0.06317284309886273,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0246942896764522,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.19890399323450778,0.0,0.01670237960225684,0.0,0.0,0.03340475920451368,0.0,0.01850996534749244,0.0,0.06317284309886273,0.015300307171885213,0.0,0.0,0.0,0.0,0.0,0.05661892233384681,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.10528807183143787,0.0,0.0,0.0,0.0,0.029398487458292894,0.0,0.0,0.0,0.0,0.03340475920451368,0.0,0.030600614343770427,0.0,0.0617357241911305,0.03340475920451368,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01670237960225684,0.0,0.0,0.01850996534749244,0.0,0.0,0.0,0.02637231875760047,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.007991910074195363,0.0,0.03294918821911868,0.15032141642031155,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03701993069498488,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.030600614343770427,0.10528807183143787,0.0,0.0,0.0,0.0437802896314179,0.028309461166923407,0.0,0.03340475920451368,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03340475920451368,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013186159378800235,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026492773844308485,0.0,0.0,0.03340475920451368,0.0,0.0,0.0,0.05010713880677052,0.0,0.0,0.0,0.0,0.13361903681805473,0.0,0.0,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028309461166923407,0.0,0.03701993069498488,0.0,0.06317284309886273,0.03340475920451368,0.0,0.0,0.0,0.0,0.0835118980112842,0.0,0.0,0.0,0.0,0.04899747909715482,0.0,0.03103863684312609,0.0,0.07911695627280141,0.0,0.0,0.0,0.0,0.0,0.0,0.025192270167178014,0.01850996534749244,0.0,0.0,0.0,0.0,0.0,0.0,0.03340475920451368,0.0,0.0,0.0,0.0,0.0,0.0,0.01670237960225684,0.014154730583461703,0.02189014481570895,0.0,0.01670237960225684,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+scipy,Fundamental algorithms for scientific computing in Python,".. image:: https://raw.githubusercontent.com/scipy/scipy/main/doc/source/_static/logo.svg
+  :target: https://scipy.org
+  :width: 110
+  :height: 110
+  :align: left 
+
+.. image:: https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A
+  :target: https://numfocus.org
+
+.. image:: https://img.shields.io/pypi/dm/scipy.svg?label=Pypi%20downloads
+  :target: https://pypi.org/project/scipy/
+
+.. image:: https://img.shields.io/conda/dn/conda-forge/scipy.svg?label=Conda%20downloads
+  :target: https://anaconda.org/conda-forge/scipy
+
+.. image:: https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg
+  :target: https://stackoverflow.com/questions/tagged/scipy
+
+.. image:: https://img.shields.io/badge/DOI-10.1038%2Fs41592--019--0686--2-blue.svg
+  :target: https://www.nature.com/articles/s41592-019-0686-2
+
+SciPy (pronounced ""Sigh Pie"") is an open-source software for mathematics,
+science, and engineering. It includes modules for statistics, optimization,
+integration, linear algebra, Fourier transforms, signal and image processing,
+ODE solvers, and more.
+
+- **Website:** https://scipy.org
+- **Documentation:** https://docs.scipy.org/doc/scipy/
+- **Development version of the documentation:** https://scipy.github.io/devdocs
+- **SciPy development forum:** https://discuss.scientific-python.org/c/contributor/scipy
+- **Stack Overflow:** https://stackoverflow.com/questions/tagged/scipy
+- **Source code:** https://github.com/scipy/scipy
+- **Contributing:** https://scipy.github.io/devdocs/dev/index.html
+- **Bug reports:** https://github.com/scipy/scipy/issues
+- **Code of Conduct:** https://docs.scipy.org/doc/scipy/dev/conduct/code_of_conduct.html
+- **Report a security vulnerability:** https://tidelift.com/docs/security
+- **Citing in your work:** https://www.scipy.org/citing-scipy/
+
+SciPy is built to work with
+NumPy arrays, and provides many user-friendly and efficient numerical routines,
+such as routines for numerical integration and optimization. Together, they
+run on all popular operating systems, are quick to install, and are free of
+charge. NumPy and SciPy are easy to use, but powerful enough to be depended
+upon by some of the world's leading scientists and engineers. If you need to
+manipulate numbers on a computer and display or publish the results, give
+SciPy a try!
+
+For the installation instructions, see `our install
+guide <https://scipy.org/install/>`__.
+
+
+Call for Contributions
+----------------------
+
+We appreciate and welcome contributions. Small improvements or fixes are always appreciated; issues labeled as ""good
+first issue"" may be a good starting point. Have a look at `our contributing
+guide <https://scipy.github.io/devdocs/dev/index.html>`__.
+
+Writing code isn’t the only way to contribute to SciPy. You can also:
+
+- review pull requests
+- triage issues
+- develop tutorials, presentations, and other educational materials
+- maintain and improve `our website <https://github.com/scipy/scipy.org>`__
+- develop graphic design for our brand assets and promotional materials
+- help with outreach and onboard new contributors
+- write grant proposals and help with other fundraising efforts
+
+If you’re unsure where to start or how your skills fit in, reach out! You can
+ask on the `forum <https://discuss.scientific-python.org/c/contributor/scipy>`__
+or here, on GitHub, by leaving a comment on a relevant issue that is already
+open.
+
+If you are new to contributing to open source, `this
+guide <https://opensource.guide/how-to-contribute/>`__ helps explain why, what,
+and how to get involved.
+",37,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.02588501595061944,0.0,0.0,0.0,0.0,0.0,0.0,0.028686376413125856,0.017988424320145257,0.0,0.0,0.02371211196398095,0.019135359672875933,0.0,0.020435647732586215,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028686376413125856,0.0,0.05737275282625171,0.02371211196398095,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03904247961300105,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04087129546517243,0.0,0.0,0.020435647732586215,0.0,0.0,0.021936720135382348,0.0,0.02588501595061944,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0474242239279619,0.0,0.0,0.0,0.04105797436452812,0.02588501595061944,0.0,0.0,0.02371211196398095,0.02371211196398095,0.089910144339214,0.0,0.0,0.0,0.0,0.0,0.0,0.02371211196398095,0.02588501595061944,0.06784982274494977,0.05177003190123888,0.0,0.0,0.0,0.0474242239279619,0.0574060790186278,0.05177003190123888,0.0574060790186278,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02371211196398095,0.0,0.05088736705871232,0.07765504785185832,0.0,0.0474242239279619,0.0,0.030374127715277685,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08211594872905624,0.0,0.0,0.0260283197420007,0.020435647732586215,0.0,0.035976848640290514,0.0,0.016962455686237443,0.02588501595061944,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02371211196398095,0.02588501595061944,0.0,0.020435647732586215,0.0,0.035976848640290514,0.0,0.0,0.0474242239279619,0.0,0.0,0.0,0.0,0.02588501595061944,0.02588501595061944,0.0,0.0,0.0,0.0,0.017988424320145257,0.0,0.0,0.09109911909700245,0.019135359672875933,0.0,0.0,0.0,0.0,0.0,0.0,0.02588501595061944,0.0,0.0,0.07654143869150373,0.02371211196398095,0.06130694319775865,0.0,0.0,0.0,0.04810306249184052,0.2999437811325926,0.0,0.0,0.0,0.0,0.13394751771013155,0.0,0.06507079935500175,0.0,0.02588501595061944,0.0,0.038270719345751866,0.0,0.0,0.0,0.0,0.0,0.04810306249184052,0.016962455686237443,0.0,0.0,0.02588501595061944,0.05737275282625171,0.0,0.0,0.0,0.0,0.0,0.02588501595061944,0.09567679836437967,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04087129546517243,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01603435416394684,0.0,0.0,0.0,0.0,0.0,0.01603435416394684,0.0,0.0,0.020435647732586215,0.0,0.05737275282625171,0.0,0.0,0.021936720135382348,0.0,0.0,0.0,0.0,0.0,0.0,0.02588501595061944,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02371211196398095,0.0,0.0,0.035976848640290514,0.0,0.0,0.02588501595061944,0.05737275282625171,0.0474242239279619,0.04087129546517243,0.0,0.0,0.0,0.05088736705871232,0.0,0.02588501595061944,0.0,0.021936720135382348,0.0,0.16423189745811248,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02371211196398095,0.02588501595061944,0.0,0.02371211196398095,0.02588501595061944,0.0,0.0,0.0,0.0,0.020435647732586215,0.0,0.01301415987100035,0.021936720135382348,0.0,0.0,0.0,0.03715711018539729,0.0,0.03063839822548181,0.0,0.0,0.0,0.07113633589194285,0.02588501595061944,0.0,0.0,0.0,0.0,0.017988424320145257,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05177003190123888,0.0,0.02588501595061944,0.0,0.0,0.0,0.0,0.0,0.0,0.016962455686237443,0.0,0.0,0.0,0.06130694319775865,0.0,0.8062118067753524,0.0,0.0,0.05737275282625171,0.017988424320145257,0.0,0.0,0.0,0.0,0.0,0.0,0.06507079935500175,0.0,0.0,0.0,0.02588501595061944,0.016962455686237443,0.0,0.06074825543055537,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02588501595061944,0.07765504785185832,0.0,0.020435647732586215,0.0,0.0,0.0,0.028686376413125856,0.0,0.0,0.0,0.015187063857638843,0.0,0.0,0.0,0.0780849592260021,0.02588501595061944,0.0,0.0,0.05177003190123888,0.0,0.1226138863955173,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02371211196398095,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.021936720135382348,0.0,0.0,0.0,0.0,0.0,0.015187063857638843,0.0,0.01603435416394684,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01301415987100035,0.0,0.0,0.0,0.019135359672875933,0.0,0.043873440270764695,0.02371211196398095,0.0,0.0,0.0,0.0,0.020435647732586215,0.0,0.0,0.0,0.043873440270764695,0.0,0.02588501595061944,0.02588501595061944,0.02371211196398095,0.0,0.03206870832789368,0.0,0.0,0.0,0.0
+seaborn,Statistical data visualization,"<img src=""https://raw.githubusercontent.com/mwaskom/seaborn/master/doc/_static/logo-wide-lightbg.svg""><br>
+
+--------------------------------------
+
+seaborn: statistical data visualization
+=======================================
+
+[![PyPI Version](https://img.shields.io/pypi/v/seaborn.svg)](https://pypi.org/project/seaborn/)
+[![License](https://img.shields.io/pypi/l/seaborn.svg)](https://github.com/mwaskom/seaborn/blob/master/LICENSE.md)
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.03021/status.svg)](https://doi.org/10.21105/joss.03021)
+[![Tests](https://github.com/mwaskom/seaborn/workflows/CI/badge.svg)](https://github.com/mwaskom/seaborn/actions)
+[![Code Coverage](https://codecov.io/gh/mwaskom/seaborn/branch/master/graph/badge.svg)](https://codecov.io/gh/mwaskom/seaborn)
+
+Seaborn is a Python visualization library based on matplotlib. It provides a high-level interface for drawing attractive statistical graphics.
+
+
+Documentation
+-------------
+
+Online documentation is available at [seaborn.pydata.org](https://seaborn.pydata.org).
+
+The docs include a [tutorial](https://seaborn.pydata.org/tutorial.html), [example gallery](https://seaborn.pydata.org/examples/index.html), [API reference](https://seaborn.pydata.org/api.html), [FAQ](https://seaborn.pydata.org/faq), and other useful information.
+
+To build the documentation locally, please refer to [`doc/README.md`](doc/README.md).
+
+Dependencies
+------------
+
+Seaborn supports Python 3.8+.
+
+Installation requires [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), and [matplotlib](https://matplotlib.org/). Some advanced statistical functionality requires [scipy](https://www.scipy.org/) and/or [statsmodels](https://www.statsmodels.org/).
+
+
+Installation
+------------
+
+The latest stable release (and required dependencies) can be installed from PyPI:
+
+    pip install seaborn
+
+It is also possible to include optional statistical dependencies:
+
+    pip install seaborn[stats]
+
+Seaborn can also be installed with conda:
+
+    conda install seaborn
+
+Note that the main anaconda repository lags PyPI in adding new releases, but conda-forge (`-c conda-forge`) typically updates quickly.
+
+Citing
+------
+
+A paper describing seaborn has been published in the [Journal of Open Source Software](https://joss.theoj.org/papers/10.21105/joss.03021). The paper provides an introduction to the key features of the library, and it can be used as a citation if seaborn proves integral to a scientific publication.
+
+Testing
+-------
+
+Testing seaborn requires installing additional dependencies; they can be installed with the `dev` extra (e.g., `pip install .[dev]`).
+
+To test the code, run `make test` in the source directory. This will exercise the unit tests (using [pytest](https://docs.pytest.org/)) and generate a coverage report.
+
+Code style is enforced with `flake8` using the settings in the [`setup.cfg`](./setup.cfg) file. Run `make lint` to check. Alternately, you can use `pre-commit` to automatically run lint checks on any files you are committing: just run `pre-commit install` to set it up, and then commit as usual going forward.
+
+Development
+-----------
+
+Seaborn development takes place on Github: https://github.com/mwaskom/seaborn
+
+Please submit bugs that you encounter to the [issue tracker](https://github.com/mwaskom/seaborn/issues) with a reproducible example demonstrating the problem. Questions about usage are more at home on StackOverflow, where there is a [seaborn tag](https://stackoverflow.com/questions/tagged/seaborn).
+",22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.02329522455217743,0.0,0.016188685557584345,0.0,0.02329522455217743,0.0,0.02329522455217743,0.0,0.0,0.0,0.0,0.0,0.03444174045066856,0.0,0.01839106468807871,0.0,0.0,0.0,0.0,0.03237737111516869,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02329522455217743,0.016188685557584345,0.0,0.0,0.0,0.0,0.02342419082385264,0.0,0.021339719236066007,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01839106468807871,0.0,0.0,0.01722087022533428,0.0,0.01839106468807871,0.01722087022533428,0.0,0.0,0.0,0.0,0.0,0.0,0.05873915775804114,0.0,0.0,0.0,0.039483910109761766,0.0,0.0,0.02329522455217743,0.021339719236066007,0.0,0.0,0.0,0.036950131083706685,0.0,0.039483910109761766,0.0,0.0,0.0,0.07080031861518837,0.0,0.0,0.07744892814517208,0.0,0.0,0.0,0.0,0.0,0.06106145963689144,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.042679438472132014,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03237737111516869,0.0,0.0,0.0,0.0,0.0,0.06888348090133713,0.0,0.0,0.0,0.0,0.03053072981844572,0.0,0.0,0.0,0.0,0.02733520145607548,0.021339719236066007,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06158355180617782,0.0,0.0,0.03513628623577896,0.03678212937615742,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.059225865164642656,0.0,0.0,0.0,0.0,0.0,0.0,0.016188685557584345,0.0,0.03237737111516869,0.0,0.0,0.0,0.0,0.0,0.0,0.03237737111516869,0.0,0.0,0.0,0.0,0.0,0.0,0.02329522455217743,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07027257247155792,0.01722087022533428,0.0,0.0,0.0,0.0,0.0,0.019741955054880883,0.02329522455217743,0.0,0.0,0.0,0.0,0.0,0.0,0.01722087022533428,0.0,0.043290359354328796,0.2506534246960024,0.0,0.0,0.0,0.0,0.0,0.0,0.03513628623577896,0.0,0.0,0.05163261876344806,0.01722087022533428,0.0,0.0,0.016188685557584345,0.0,0.0,0.07215059892388132,0.03053072981844572,0.06401915770819802,0.019741955054880883,0.0,0.0,0.0,0.02329522455217743,0.0,0.0,0.0,0.0,0.03444174045066856,0.0,0.0,0.0,0.14684789439510285,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016188685557584345,0.0,0.0,0.0,0.0,0.0,0.01722087022533428,0.0,0.02733520145607548,0.03237737111516869,0.0,0.0,0.0,0.0,0.0,0.05163261876344806,0.0,0.0,0.0,0.014430119784776263,0.0,0.0,0.0,0.0,0.0,0.014430119784776263,0.0,0.03444174045066856,0.0,0.059225865164642656,0.0,0.06988567365653228,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.23495663103216455,0.0,0.0,0.0,0.0,0.0,0.016188685557584345,0.0,0.019741955054880883,0.0,0.0,0.0,0.03678212937615742,0.0,0.0,0.019741955054880883,0.01526536490922286,0.0,0.0,0.0,0.0,0.0,0.19706736577976902,0.0,0.0,0.0,0.0,0.04659044910435486,0.09318089820870971,0.0,0.0,0.0,0.0,0.05166261067600284,0.0,0.0,0.0,0.03444174045066856,0.0,0.0,0.0,0.0,0.02329522455217743,0.0,0.0,0.05163261876344806,0.0,0.02581630938172403,0.0,0.0,0.0,0.01171209541192632,0.039483910109761766,0.0,0.02581630938172403,0.1807141656720682,0.06687909539094682,0.04659044910435486,0.018382021164759434,0.0,0.0,0.0,0.042679438472132014,0.0,0.0,0.0,0.0,0.0,0.016188685557584345,0.0,0.039483910109761766,0.0,0.0,0.0,0.0,0.021339719236066007,0.03444174045066856,0.0,0.0,0.02329522455217743,0.02581630938172403,0.0,0.0,0.021339719236066007,0.0,0.06401915770819802,0.0,0.0,0.06106145963689144,0.0,0.0,0.0,0.01839106468807871,0.0,0.042679438472132014,0.7744892814517209,0.0,0.0,0.0,0.0,0.0,0.0,0.021339719236066007,0.05163261876344806,0.0,0.02342419082385264,0.0,0.0,0.0,0.0,0.01526536490922286,0.0,0.02733520145607548,0.0,0.0,0.0,0.0,0.0,0.016188685557584345,0.019741955054880883,0.0,0.04659044910435486,0.0,0.0,0.0,0.0,0.0,0.0,0.12908154690862014,0.021339719236066007,0.0,0.01366760072803774,0.0,0.012316710361235564,0.0,0.07027257247155792,0.0,0.0,0.02581630938172403,0.02329522455217743,0.02329522455217743,0.0,0.0,0.0,0.0,0.0,0.05467040291215096,0.042679438472132014,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02329522455217743,0.0,0.0,0.0,0.0,0.0,0.039483910109761766,0.0,0.0,0.019741955054880883,0.0,0.02581630938172403,0.01366760072803774,0.021339719236066007,0.0,0.0,0.03678212937615742,0.0,0.0,0.0,0.0,0.0,0.0,0.01171209541192632,0.0,0.06988567365653228,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01526536490922286,0.0,0.0,0.0,0.0,0.028860239569552526,0.0,0.0,0.0,0.0
+plotly,An open-source interactive data visualization library for Python,"# plotly.py
+
+<table>
+    <tr>
+        <td>Latest Release</td>
+        <td>
+            <a href=""https://pypi.org/project/plotly/""/>
+            <img src=""https://badge.fury.io/py/plotly.svg""/>
+        </td>
+    </tr>
+    <tr>
+        <td>User forum</td>
+        <td>
+            <a href=""https://community.plotly.com/""/>
+            <img src=""https://img.shields.io/badge/help_forum-discourse-blue.svg""/>
+        </td>
+    </tr>
+    <tr>
+        <td>PyPI Downloads</td>
+        <td>
+            <a href=""https://pepy.tech/project/plotly""/>
+            <img src=""https://pepy.tech/badge/plotly/month""/>
+        </td>
+    </tr>
+    <tr>
+        <td>License</td>
+        <td>
+            <a href=""https://opensource.org/licenses/MIT""/>
+            <img src=""https://img.shields.io/badge/License-MIT-yellow.svg""/>
+        </td>
+    </tr>
+</table>
+
+<div align=""center"">
+  <a href=""https://dash.plotly.com/project-maintenance"">
+    <img src=""https://dash.plotly.com/assets/images/maintained-by-plotly.png"" width=""400px"" alt=""Maintained by Plotly"">
+  </a>
+</div>
+
+## Quickstart
+
+`pip install plotly`
+
+```python
+import plotly.express as px
+fig = px.bar(x=[""a"", ""b"", ""c""], y=[1, 3, 2])
+fig.show()
+```
+
+See the [Python documentation](https://plotly.com/python/) for more examples.
+
+## Overview
+
+[plotly.py](https://plotly.com/python/) is an interactive, open-source, and browser-based graphing library for Python :sparkles:
+
+Built on top of [plotly.js](https://github.com/plotly/plotly.js), `plotly.py` is a high-level, declarative charting library. plotly.js ships with over 30 chart types, including scientific charts, 3D graphs, statistical charts, SVG maps, financial charts, and more.
+
+`plotly.py` is [MIT Licensed](https://github.com/plotly/plotly.py/blob/master/LICENSE.txt). Plotly graphs can be viewed in Jupyter notebooks, standalone HTML files, or integrated into [Dash applications](https://dash.plotly.com/).
+
+[Contact us](https://plotly.com/consulting-and-oem/) for consulting, dashboard development, application integration, and feature additions.
+
+<p align=""center"">
+    <a href=""https://plotly.com/python/"" target=""_blank"">
+    <img src=""https://raw.githubusercontent.com/cldougl/plot_images/add_r_img/plotly_2017.png"">
+</a></p>
+
+---
+
+- [Online Documentation](https://plotly.com/python/)
+- [Contributing to plotly](https://github.com/plotly/plotly.py/blob/master/CONTRIBUTING.md)
+- [Changelog](https://github.com/plotly/plotly.py/blob/master/CHANGELOG.md)
+- [Code of Conduct](https://github.com/plotly/plotly.py/blob/master/CODE_OF_CONDUCT.md)
+- [Community forum](https://community.plotly.com)
+
+---
+
+## Installation
+
+plotly.py may be installed using pip
+
+```
+pip install plotly
+```
+
+or conda.
+
+```
+conda install -c conda-forge plotly
+```
+
+### Jupyter Widget Support
+
+For use as a Jupyter widget, install `jupyter` and `anywidget`
+packages using `pip`:
+
+```
+pip install jupyter anywidget
+```
+
+or `conda`:
+
+```
+conda install jupyter anywidget
+```
+
+### Static Image Export
+
+plotly.py supports [static image export](https://plotly.com/python/static-image-export/),
+using either the [`kaleido`](https://github.com/plotly/Kaleido)
+package (recommended, supported as of `plotly` version 4.9) or the [orca](https://github.com/plotly/orca)
+command line utility (legacy as of `plotly` version 4.9).
+
+#### Kaleido
+
+The [`kaleido`](https://github.com/plotly/Kaleido) package has no dependencies and can be installed
+using pip
+
+```
+pip install -U kaleido
+```
+
+or conda
+
+```
+conda install -c conda-forge python-kaleido
+```
+
+### Extended Geo Support
+
+Some plotly.py features rely on fairly large geographic shape files. The county
+choropleth figure factory is one such example. These shape files are distributed as a
+separate `plotly-geo` package. This package can be installed using pip...
+
+```
+pip install plotly-geo==1.0.0
+```
+
+or conda
+
+```
+conda install -c plotly plotly-geo=1.0.0
+```
+
+`plotly-geo` can be found on Github at https://github.com/plotly/plotly-geo.
+
+## Copyright and Licenses
+
+Code and documentation copyright 2019 Plotly, Inc.
+
+Code released under the [MIT license](https://github.com/plotly/plotly.py/blob/master/LICENSE.txt).
+
+Docs released under the [Creative Commons license](https://github.com/plotly/documentation/blob/source/LICENSE).
+
+",3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.015414940948012162,0.0,0.0,0.0,0.0,0.0,0.013909598987712378,0.0,0.0,0.019332556656821025,0.0,0.0,0.0,0.0,0.012741965050356442,0.0,0.0,0.0,0.05260980383298928,0.0,0.0,0.0,0.0,0.021962641673212928,0.0,0.0,0.0,0.0,0.0,0.012741965050356442,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027973209723019168,0.0,0.012741965050356442,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06588792501963879,0.0,0.010981320836606464,0.0,0.0,0.0,0.0,0.0,0.011787938658061443,0.0,0.0,0.0,0.021962641673212928,0.0,0.027819197975424755,0.07014640511065237,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.022062955639967234,0.013909598987712378,0.0,0.0,0.0,0.0,0.13890334888457528,0.0,0.013909598987712378,0.0,0.030847790093284973,0.0,0.0,0.0,0.0,0.09114962760405723,0.013909598987712378,0.0,0.013909598987712378,0.0,0.0,0.020565193395523314,0.0,0.0,0.0,0.030829881896024324,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07014640511065237,0.009666278328410513,0.0,0.0,0.0,0.0,0.0,0.010282596697761657,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008160936368110727,0.0,0.0,0.015414940948012162,0.0,0.012741965050356442,0.030829881896024324,0.0,0.0,0.007354318546655745,0.0,0.0,0.027973209723019168,0.0,0.0,0.009666278328410513,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.023575877316122887,0.0,0.046244822844036484,0.0,0.0,0.0,0.0,0.019332556656821025,0.0,0.02899883498523154,0.0,0.0,0.0,0.0,0.0,0.0,0.019332556656821025,0.0,0.0,0.025483930100712884,0.0,0.0,0.0,0.0,0.0,0.0,0.015414940948012162,0.0,0.0,0.10521960766597856,0.0,0.0,0.0,0.0839196291690575,0.010282596697761657,0.0,0.0,0.0,0.0,0.0,0.023575877316122887,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010282596697761657,0.07072763194836866,0.008616237164888416,0.17269082246427805,0.0,0.0,0.0,0.0,0.04113038679104663,0.0,0.055946419446038335,0.010981320836606464,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08616237164888416,0.009114962760405724,0.038225895151069327,0.0,0.0,0.015414940948012162,0.027819197975424755,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09248964568807297,0.12275620894364164,0.0,0.0,0.0,0.0,0.0,0.012741965050356442,0.0,0.009666278328410513,0.0,0.0,0.0,0.0,0.0,0.010282596697761657,0.0,0.02448280910433218,0.08699650495569461,0.013909598987712378,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.030829881896024324,0.0,0.0,0.05893969329030722,0.0,0.0,0.0,0.011787938658061443,0.0,0.0,0.0,0.06165976379204865,0.0,0.0,0.0,0.0,0.013909598987712378,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010282596697761657,0.011787938658061443,0.018229925520811447,0.0,0.013909598987712378,0.0,0.0,0.0,0.01470863709331149,0.0,0.04080468184055363,0.0,0.0,0.0,0.0,0.0,0.027819197975424755,0.0,0.0,0.09254337027985492,0.0,0.0,0.0,0.0,0.8940665749847054,0.020565193395523314,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020979907292264375,0.0,0.0,0.0,0.0,0.013311188815621882,0.0,0.05487960470455007,0.0,0.0,0.0,0.0,0.0,0.013909598987712378,0.0,0.0,0.0,0.009666278328410513,0.0,0.0,0.0,0.0,0.0,0.013909598987712378,0.0,0.010282596697761657,0.027819197975424755,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010981320836606464,0.0,0.0,0.0,0.0,0.0,0.009666278328410513,0.0,0.0,0.0,0.0,0.0,0.0,0.013986604861509584,0.0,0.0,0.0,0.0,0.0,0.0,0.02448280910433218,0.0,0.0,0.0,0.0,0.0,0.05799766997046308,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03536381597418433,0.0,0.015414940948012162,0.0,0.0,0.0,0.0,0.022062955639967234,0.011787938658061443,0.027973209723019168,0.0,0.027819197975424755,0.0,0.0,0.0,0.010981320836606464,0.0,0.027819197975424755,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.011787938658061443,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027819197975424755,0.013909598987712378,0.0,0.0,0.0,0.008160936368110727,0.0,0.008616237164888416,0.0,0.05490660418303232,0.0,0.0,0.0,0.0,0.0,0.0,0.013986604861509584,0.0,0.013909598987712378,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010981320836606464,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+requests,Python HTTP for Humans.,"# Requests
+
+**Requests** is a simple, yet elegant, HTTP library.
+
+```python
+>>> import requests
+>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+>>> r.encoding
+'utf-8'
+>>> r.text
+'{""authenticated"": true, ...'
+>>> r.json()
+{'authenticated': True, ...}
+```
+
+Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data — but nowadays, just use the `json` method!
+
+Requests is one of the most downloaded Python packages today, pulling in around `30M downloads / week`— according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `1,000,000+` repositories. You may certainly put your trust in this code.
+
+[![Downloads](https://static.pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)
+[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)
+
+## Installing Requests and Supported Versions
+
+Requests is available on PyPI:
+
+```console
+$ python -m pip install requests
+```
+
+Requests officially supports Python 3.8+.
+
+## Supported Features & Best–Practices
+
+Requests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.
+
+- Keep-Alive & Connection Pooling
+- International Domains and URLs
+- Sessions with Cookie Persistence
+- Browser-style TLS/SSL Verification
+- Basic & Digest Authentication
+- Familiar `dict`–like Cookies
+- Automatic Content Decompression and Decoding
+- Multi-part File Uploads
+- SOCKS Proxy Support
+- Connection Timeouts
+- Streaming Downloads
+- Automatic honoring of `.netrc`
+- Chunked HTTP Requests
+
+## API Reference and User Guide available on [Read the Docs](https://requests.readthedocs.io)
+
+[![Read the Docs](https://raw.githubusercontent.com/psf/requests/main/ext/ss.png)](https://requests.readthedocs.io)
+
+## Cloning the repository
+
+When cloning the Requests repository, you may need to add the `-c
+fetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit (see
+[this issue](https://github.com/psf/requests/issues/2690) for more background):
+
+```shell
+git clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git
+```
+
+You can also apply this setting to your global Git config:
+
+```shell
+git config --global fetch.fsck.badTimezone ignore
+```
+
+---
+
+[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)
+",6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.06044424588428015,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0201597854063963,0.0,0.0,0.0,0.0,0.0,0.0,0.018951448015234802,0.0,0.0,0.04305937071186803,0.030222122942140075,0.0,0.0,0.0,0.0,0.0,0.06044424588428015,0.05454157912122531,0.0,0.037902896030469604,0.0,0.0,0.030222122942140075,0.030222122942140075,0.013710882613604392,0.103145381144487,0.0,0.05454157912122531,0.0,0.0,0.0,0.024981557540509666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.021529685355934015,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014418681201717666,0.0,0.0,0.0,0.0,0.0,0.08288310702712917,0.0,0.0,0.030222122942140075,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06044424588428015,0.0,0.05454157912122531,0.0,0.0,0.0,0.06047935621918891,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027270789560612654,0.0,0.0,0.0,0.018951448015234802,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028837362403435332,0.0,0.0,0.0,0.0,0.0,0.05685434404570441,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.103145381144487,0.0,0.0,0.0,0.018951448015234802,0.103145381144487,0.018951448015234802,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.103145381144487,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.018951448015234802,0.0,0.10908315824245061,0.08226529568162634,0.06047935621918891,0.0,0.06044424588428015,0.0,0.0,0.0,0.023111118787923726,0.0,0.0,0.0,0.0201597854063963,0.0,0.0,0.0,0.0,0.0,0.0,0.24828688883103797,0.0,0.0,0.027270789560612654,0.09066636882642022,0.0,0.0,0.027421765227208784,0.021529685355934015,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016892765257688142,0.0,0.0,0.023111118787923726,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0403195708127926,0.0,0.0,0.0,0.0,0.08181236868183796,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016000114633707378,0.0,0.0,0.0,0.024981557540509666,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05067829577306443,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04622223757584745,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027270789560612654,0.027270789560612654,0.0,0.0,0.0,0.0,0.0,0.074944672621529,0.0,0.030222122942140075,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0201597854063963,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.057674724806870664,0.0,0.016000114633707378,0.0,0.0,0.0,0.0,0.027270789560612654,0.05454157912122531,0.0,0.0,0.0201597854063963,0.0,0.0,0.0,0.0,0.0,0.06047935621918891,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027421765227208784,0.0,0.30222122942140073,0.0,0.0,0.03914634375653987,0.0,0.07531684462453879,0.0,0.024981557540509666,0.024981557540509666,0.0,0.0,0.0,0.0,0.0,0.0,0.05685434404570441,0.04622223757584745,0.0,0.05454157912122531,0.024981557540509666,0.0,0.0,0.024981557540509666,0.0,0.0,0.0,0.0,0.09066636882642022,0.790852897257767,0.0,0.0,0.0,0.0,0.0,0.027270789560612654,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.018951448015234802,0.0,0.0,0.0,0.0,0.0,0.05454157912122531,0.027421765227208784,0.027270789560612654,0.0,0.0,0.0,0.017870553386293314,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.023111118787923726,0.0,0.0,0.0,0.0,0.016000114633707378,0.0,0.028837362403435332,0.06933335636377118,0.027421765227208784,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05454157912122531,0.0,0.0,0.0,0.0,0.024981557540509666,0.0,0.0,0.0,0.0,0.0,0.05454157912122531,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05454157912122531,0.0,0.0,0.027270789560612654,0.0,0.06044424588428015,0.0,0.016000114633707378,0.0,0.05067829577306443,0.0,0.0,0.06044424588428015,0.0,0.0,0.0,0.0,0.0,0.027421765227208784,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.016892765257688142,0.0,0.0,0.0,0.0
+beautifulsoup4,Screen-scraping library,"Beautiful Soup is a library that makes it easy to scrape information
+from web pages. It sits atop an HTML or XML parser, providing Pythonic
+idioms for iterating, searching, and modifying the parse tree.
+
+# Quick start
+
+```
+>>> from bs4 import BeautifulSoup
+>>> soup = BeautifulSoup(""<p>Some<b>bad<i>HTML"")
+>>> print(soup.prettify())
+<html>
+ <body>
+  <p>
+   Some
+   <b>
+    bad
+    <i>
+     HTML
+    </i>
+   </b>
+  </p>
+ </body>
+</html>
+>>> soup.find(string=""bad"")
+'bad'
+>>> soup.i
+<i>HTML</i>
+#
+>>> soup = BeautifulSoup(""<tag1>Some<tag2/>bad<tag3>XML"", ""xml"")
+#
+>>> print(soup.prettify())
+<?xml version=""1.0"" encoding=""utf-8""?>
+<tag1>
+ Some
+ <tag2/>
+ bad
+ <tag3>
+  XML
+ </tag3>
+</tag1>
+```
+
+To go beyond the basics, [comprehensive documentation is available](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+
+# Links
+
+* [Homepage](https://www.crummy.com/software/BeautifulSoup/bs4/)
+* [Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Discussion group](https://groups.google.com/group/beautifulsoup/)
+* [Development](https://code.launchpad.net/beautifulsoup/)
+* [Bug tracker](https://bugs.launchpad.net/beautifulsoup/)
+* [Complete changelog](https://git.launchpad.net/beautifulsoup/tree/CHANGELOG)
+
+# Note on Python 2 sunsetting
+
+Beautiful Soup's support for Python 2 was discontinued on December 31,
+2020: one year after the sunset date for Python 2 itself. From this
+point onward, new Beautiful Soup development will exclusively target
+Python 3. The final release of Beautiful Soup 4 to support Python 2
+was 4.9.3.
+
+# Supporting the project
+
+If you use Beautiful Soup as part of your professional work, please consider a
+[Tidelift subscription](https://tidelift.com/subscription/pkg/pypi-beautifulsoup4?utm_source=pypi-beautifulsoup4&utm_medium=referral&utm_campaign=readme).
+This will support many of the free software projects your organization
+depends on, not just Beautiful Soup.
+
+If you use Beautiful Soup for personal projects, the best way to say
+thank you is to read
+[Tool Safety](https://www.crummy.com/software/BeautifulSoup/zine/), a zine I
+wrote about what Beautiful Soup has taught me about software
+development.
+
+# Building the documentation
+
+The bs4/doc/ directory contains full documentation in Sphinx
+format. Run `make html` in that directory to create HTML
+documentation.
+
+# Running the unit tests
+
+Beautiful Soup supports unit test discovery using Pytest:
+
+```
+$ pytest
+```
+
+",7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020201201287343346,0.0,0.0,0.0,0.19329072535065964,0.0,0.0,0.0,0.029069161825305112,0.28993608802598947,0.4764383150898473,0.0,0.026628966395681148,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04589892098785918,0.0,0.02294946049392959,0.0,0.0,0.0,0.0,0.0,0.0,0.058138323650610224,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01536952115847721,0.0,0.0,0.0,0.0,0.0,0.07572757171134581,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.032215120891776604,0.0,0.14659640464302992,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05116572666261555,0.053257932791362296,0.0,0.0,0.026628966395681148,0.0,0.0,0.0,0.0,0.04610856347543163,0.0,0.0,0.07307523395623944,0.0,0.0,0.0,0.0,0.01904902706022877,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.024635181556324225,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.0,0.0,0.026628966395681148,0.0,0.0,0.0,0.08720748547591534,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.16206082822613993,0.1082700687861758,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02294946049392959,0.0,0.0,0.0,0.0,0.0,0.020201201287343346,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.10994730348227245,0.0,0.0,0.0,0.0,0.0,0.0341104844417437,0.0,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04297844497970546,0.02294946049392959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09664536267532982,0.0,0.020201201287343346,0.0,0.024635181556324225,0.0,0.0,0.0,0.0,0.0,0.02148922248985273,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.026628966395681148,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.0,0.0,0.032215120891776604,0.0,0.02148922248985273,0.0,0.0,0.026628966395681148,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04384514037374366,0.0,0.0,0.0,0.0,0.02781856630880071,0.058138323650610224,0.057345438623881966,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.0,0.0,0.024635181556324225,0.024635181556324225,0.0,0.0,0.0,0.0,0.0,0.02148922248985273,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01904902706022877,0.024635181556324225,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1142941623613726,0.5863856185721197,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02294946049392959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06443024178355321,0.06147808463390884,0.0,0.0,0.0,0.0,0.25772096713421283,0.0,0.0,0.02294946049392959,0.0,0.0,0.0,0.0,0.0341104844417437,0.0,0.0,0.0,0.0,0.053257932791362296,0.0,0.0,0.0,0.026628966395681148,0.0,0.0,0.0,0.0,0.029069161825305112,0.0,0.0,0.0,0.06443024178355321,0.0,0.0,0.0,0.0,0.04927036311264845,0.0,0.0,0.0341104844417437,0.0,0.0,0.0,0.02294946049392959,0.032215120891776604,0.029069161825305112,0.029069161825305112,0.029069161825305112,0.0,0.0,0.014615046791247886,0.0,0.0,0.0,0.02148922248985273,0.024635181556324225,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.024635181556324225,0.0,0.0,0.0,0.0,0.0,0.0720270347671733,0.2198946069645449,0.0,0.0,0.0
+Flask,A simple framework for building complex web applications.,"# Flask
+
+Flask is a lightweight [WSGI][] web application framework. It is designed
+to make getting started quick and easy, with the ability to scale up to
+complex applications. It began as a simple wrapper around [Werkzeug][]
+and [Jinja][], and has become one of the most popular Python web
+application frameworks.
+
+Flask offers suggestions, but doesn't enforce any dependencies or
+project layout. It is up to the developer to choose the tools and
+libraries they want to use. There are many extensions provided by the
+community that make adding new functionality easy.
+
+[WSGI]: https://wsgi.readthedocs.io/
+[Werkzeug]: https://werkzeug.palletsprojects.com/
+[Jinja]: https://jinja.palletsprojects.com/
+
+
+## A Simple Example
+
+```python
+# save this as app.py
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route(""/"")
+def hello():
+    return ""Hello, World!""
+```
+
+```
+$ flask run
+  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+
+## Donate
+
+The Pallets organization develops and supports Flask and the libraries
+it uses. In order to grow the community of contributors and users, and
+allow the maintainers to devote more time to the projects, [please
+donate today][].
+
+[please donate today]: https://palletsprojects.com/donate
+
+",8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1833247240389057,0.19297442135530174,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.048243605338825435,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07959601237414993,0.0,0.0,0.0,0.09034788152103979,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04517394076051989,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04517394076051989,0.0,0.0,0.0,0.05178727302840027,0.0,0.0,0.0,0.0,0.055978542315358516,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3081701677283356,0.0,0.0,0.08008848345915302,0.0,0.0,0.0,0.0,0.0,0.05178727302840027,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6163403354566712,0.0,0.0,0.0,0.0,0.0,0.0,0.1447308160164763,0.0,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.12644544326021143,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.048243605338825435,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2311276257962517,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07170594488523653,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09034788152103979,0.048243605338825435,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04246630471049865,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04517394076051989,0.0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.0611082413463019,0.0,0.0,0.2311276257962517,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09034788152103979,0.0,0.0,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06144654682334977,0.0,0.0,0.0,0.0,0.0,0.0,0.048219882287589014,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04004424172957651,0.05178727302840027,0.0,0.0611082413463019,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1833247240389057,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.055978542315358516,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03230930475304342,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.1222164826926038,0.055978542315358516,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.035852972442618265,0.0,0.03785321925054083,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.1553618190852008,0.0,0.0,0.0,0.2311276257962517,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0611082413463019,0.0,0.0,0.2311276257962517,0.0,0.0,0.0,0.0,0.0
+Django,"A high-level Python web framework that encourages rapid development and clean, pragmatic design.","======
+Django
+======
+
+Django is a high-level Python web framework that encourages rapid development
+and clean, pragmatic design. Thanks for checking it out.
+
+All documentation is in the ""``docs``"" directory and online at
+https://docs.djangoproject.com/en/stable/. If you're just getting started,
+here's how we recommend you read the docs:
+
+* First, read ``docs/intro/install.txt`` for instructions on installing Django.
+
+* Next, work through the tutorials in order (``docs/intro/tutorial01.txt``,
+  ``docs/intro/tutorial02.txt``, etc.).
+
+* If you want to set up an actual deployment server, read
+  ``docs/howto/deployment/index.txt`` for instructions.
+
+* You'll probably want to read through the topical guides (in ``docs/topics``)
+  next; from there you can jump to the HOWTOs (in ``docs/howto``) for specific
+  problems, and check out the reference (``docs/ref``) for gory details.
+
+* See ``docs/README`` for instructions on building an HTML version of the docs.
+
+Docs are updated rigorously. If you find any problems in the docs, or think
+they should be clarified in any way, please take 30 seconds to fill out a
+ticket here: https://code.djangoproject.com/newticket
+
+To get more help:
+
+* Join the ``#django`` channel on ``irc.libera.chat``. Lots of helpful people
+  hang out there. `Webchat is available <https://web.libera.chat/#django>`_.
+
+* Join the `Django Discord community <https://chat.djangoproject.com>`_.
+
+* Join the community on the `Django Forum <https://forum.djangoproject.com/>`_.
+
+To contribute to Django:
+
+* Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for
+  information about getting involved.
+
+To run Django's test suite:
+
+* Follow the instructions in the ""Unit tests"" section of
+  ``docs/internals/contributing/writing-code/unit-tests.txt``, published online at
+  https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests
+
+Supporting the Development of Django
+====================================
+
+Django's development depends on your contributions.
+
+If you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/
+",5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02690515842655096,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.030565453094113983,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.12871802805115173,0.06562119284015272,0.0,0.0,0.0,0.0,0.0,0.08581201870076784,0.0,0.06141012049141928,0.0,0.0,0.0,0.0,0.0,0.11766821847370383,0.0,0.0,0.0,0.05724124296658842,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.035466037361846614,0.08586186444988263,0.03871603441360177,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03871603441360177,0.07743206882720353,0.07093207472369323,0.0,0.05074124886307811,0.0,0.0,0.0,0.0,0.09086073395907523,0.035466037361846614,0.0,0.0,0.0,0.0,0.0,0.6345488154708211,0.3416801314073652,0.34799068278470924,0.0,0.0,0.019465186438013652,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03871603441360177,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03871603441360177,0.035466037361846614,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07093207472369323,0.06113090618822797,0.0,0.0,0.0,0.0,0.03871603441360177,0.0,0.0,0.0,0.0,0.02690515842655096,0.07743206882720353,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02862062148329421,0.0,0.030565453094113983,0.0,0.05724124296658842,0.0,0.023982469579911108,0.12817822342391427,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02862062148329421,0.0,0.0,0.02690515842655096,0.0,0.0,0.023982469579911108,0.0,0.0,0.03281059642007636,0.15486413765440707,0.0,0.0,0.0,0.14643434203172795,0.1161481032408053,0.0,0.03871603441360177,0.0,0.0,0.0,0.10639811208553984,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05724124296658842,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06562119284015272,0.0,0.0,0.0,0.0,0.0,0.03871603441360177,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02862062148329421,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08581201870076784,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03055042300246301,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.13124238568030544,0.03281059642007636,0.0,0.0,0.04290600935038392,0.0,0.035466037361846614,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.025370624431539056,0.03281059642007636,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02690515842655096,0.0,0.0,0.03871603441360177,0.035466037361846614,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.025370624431539056,0.0,0.0,0.0,0.0,0.03871603441360177,0.0,0.0,0.0,0.03281059642007636,0.0,0.0,0.0,0.0,0.035466037361846614,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020470040163806425,0.0,0.0,0.0,0.0,0.0,0.0,0.03871603441360177,0.0,0.0,0.0,0.0,0.0,0.11357591744884404,0.0,0.0,0.03871603441360177,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04290600935038392,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09843178926022908,0.19358017206800882,0.0,0.13124238568030544,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.019465186438013652,0.0,0.0,0.07743206882720353,0.02862062148329421,0.09843178926022908,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03281059642007636,0.0,0.0,0.0,0.07093207472369323,0.0,0.023982469579911108,0.0,0.0,0.0,0.0
+fastapi,"FastAPI framework, high performance, easy to learn, fast to code, ready for production","<p align=""center"">
+  <a href=""https://fastapi.tiangolo.com""><img src=""https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"" alt=""FastAPI""></a>
+</p>
+<p align=""center"">
+    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>
+</p>
+<p align=""center"">
+<a href=""https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster"" target=""_blank"">
+    <img src=""https://github.com/fastapi/fastapi/actions/workflows/test.yml/badge.svg?event=push&branch=master"" alt=""Test"">
+</a>
+<a href=""https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/fastapi"" target=""_blank"">
+    <img src=""https://coverage-badge.samuelcolvin.workers.dev/fastapi/fastapi.svg"" alt=""Coverage"">
+</a>
+<a href=""https://pypi.org/project/fastapi"" target=""_blank"">
+    <img src=""https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20package"" alt=""Package version"">
+</a>
+<a href=""https://pypi.org/project/fastapi"" target=""_blank"">
+    <img src=""https://img.shields.io/pypi/pyversions/fastapi.svg?color=%2334D058"" alt=""Supported Python versions"">
+</a>
+</p>
+
+---
+
+**Documentation**: <a href=""https://fastapi.tiangolo.com"" target=""_blank"">https://fastapi.tiangolo.com</a>
+
+**Source Code**: <a href=""https://github.com/fastapi/fastapi"" target=""_blank"">https://github.com/fastapi/fastapi</a>
+
+---
+
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints.
+
+The key features are:
+
+* **Fast**: Very high performance, on par with **NodeJS** and **Go** (thanks to Starlette and Pydantic). [One of the fastest Python frameworks available](#performance).
+* **Fast to code**: Increase the speed to develop features by about 200% to 300%. *
+* **Fewer bugs**: Reduce about 40% of human (developer) induced errors. *
+* **Intuitive**: Great editor support. <abbr title=""also known as auto-complete, autocompletion, IntelliSense"">Completion</abbr> everywhere. Less time debugging.
+* **Easy**: Designed to be easy to use and learn. Less time reading docs.
+* **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
+* **Robust**: Get production-ready code. With automatic interactive documentation.
+* **Standards-based**: Based on (and fully compatible with) the open standards for APIs: <a href=""https://github.com/OAI/OpenAPI-Specification"" class=""external-link"" target=""_blank"">OpenAPI</a> (previously known as Swagger) and <a href=""https://json-schema.org/"" class=""external-link"" target=""_blank"">JSON Schema</a>.
+
+<small>* estimation based on tests on an internal development team, building production applications.</small>
+
+## Sponsors
+
+<!-- sponsors -->
+
+<a href=""https://blockbee.io?ref=fastapi"" target=""_blank"" title=""BlockBee Cryptocurrency Payment Gateway""><img src=""https://fastapi.tiangolo.com/img/sponsors/blockbee.png""></a>
+<a href=""https://platform.sh/try-it-now/?utm_source=fastapi-signup&utm_medium=banner&utm_campaign=FastAPI-signup-June-2023"" target=""_blank"" title=""Build, run and scale your apps on a modern, reliable, and secure PaaS.""><img src=""https://fastapi.tiangolo.com/img/sponsors/platform-sh.png""></a>
+<a href=""https://www.porter.run"" target=""_blank"" title=""Deploy FastAPI on AWS with a few clicks""><img src=""https://fastapi.tiangolo.com/img/sponsors/porter.png""></a>
+<a href=""https://bump.sh/fastapi?utm_source=fastapi&utm_medium=referral&utm_campaign=sponsor"" target=""_blank"" title=""Automate FastAPI documentation generation with Bump.sh""><img src=""https://fastapi.tiangolo.com/img/sponsors/bump-sh.svg""></a>
+<a href=""https://github.com/scalar/scalar/?utm_source=fastapi&utm_medium=website&utm_campaign=main-badge"" target=""_blank"" title=""Scalar: Beautiful Open-Source API References from Swagger/OpenAPI files""><img src=""https://fastapi.tiangolo.com/img/sponsors/scalar.svg""></a>
+<a href=""https://www.propelauth.com/?utm_source=fastapi&utm_campaign=1223&utm_medium=mainbadge"" target=""_blank"" title=""Auth, user management and more for your B2B product""><img src=""https://fastapi.tiangolo.com/img/sponsors/propelauth.png""></a>
+<a href=""https://www.withcoherence.com/?utm_medium=advertising&utm_source=fastapi&utm_campaign=website"" target=""_blank"" title=""Coherence""><img src=""https://fastapi.tiangolo.com/img/sponsors/coherence.png""></a>
+<a href=""https://www.mongodb.com/developer/languages/python/python-quickstart-fastapi/?utm_campaign=fastapi_framework&utm_source=fastapi_sponsorship&utm_medium=web_referral"" target=""_blank"" title=""Simplify Full Stack Development with FastAPI & MongoDB""><img src=""https://fastapi.tiangolo.com/img/sponsors/mongodb.png""></a>
+<a href=""https://zuplo.link/fastapi-gh"" target=""_blank"" title=""Zuplo: Scale, Protect, Document, and Monetize your FastAPI""><img src=""https://fastapi.tiangolo.com/img/sponsors/zuplo.png""></a>
+<a href=""https://liblab.com?utm_source=fastapi"" target=""_blank"" title=""liblab - Generate SDKs from FastAPI""><img src=""https://fastapi.tiangolo.com/img/sponsors/liblab.p",21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.24218757484129724,0.0,0.0,0.01687433938276777,0.0,0.0,0.0,0.0,0.0,0.025311509074151656,0.0,0.0,0.0,0.008975120543766146,0.05560884845182087,0.0,0.0,0.0,0.0,0.0,0.008437169691383885,0.02690973053792191,0.0,0.009584998919559728,0.0,0.0,0.0,0.0,0.0,0.0,0.013454865268960956,0.012140933978023441,0.0,0.008437169691383885,0.0,0.0,0.0,0.0,0.024416296451148404,0.0,0.044487078761456696,0.0,0.013454865268960956,0.0,0.0,0.0,0.0,0.0,0.0,0.045920242236842206,0.0,0.017950241087532293,0.0,0.019169997839119456,0.008975120543766146,0.019169997839119456,0.0,0.045920242236842206,0.0,0.0,0.028754996758679187,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02690973053792191,0.0,0.0,0.0385151129118146,0.0,0.0,0.02690973053792191,0.0,0.0,0.12651255017103819,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.033365309071092523,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010289051834703663,0.015911912512213758,0.0,0.0,0.011121769690364174,0.022243539380728348,0.014246476800892737,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.006419185485302434,0.0,0.013454865268960956,0.0183122223383613,0.0,0.0,0.0,0.0,0.031823825024427516,0.0,0.0,0.0,0.0,0.02690973053792191,0.0,0.0,0.0,0.0,0.0,0.060704669890117205,0.7653373706140366,0.025311509074151656,0.0,0.008437169691383885,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03833999567823891,0.0,0.0,0.0,0.0,0.0,0.0,0.012140933978023441,0.0,0.0,0.008437169691383885,0.0,0.0,0.0366244446767226,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.035900482175064585,0.19549198485936958,0.0,0.1808789348421772,0.0,0.0,0.012140933978023441,0.0,0.0,0.0,0.17091407515803883,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012140933978023441,0.0,0.0,0.0,0.012140933978023441,0.0,0.0,0.0,0.0,0.0,0.0,0.024281867956046883,0.0,0.0,0.0,0.0,0.02690973053792191,0.009584998919559728,0.008975120543766146,0.0,0.0,0.0,0.0,0.0,0.0,0.04036459580688287,0.0,0.0,0.045920242236842206,0.0,0.0,0.0,0.0,0.0,0.0,0.036422801934070326,0.0,0.0,0.0,0.0,0.015041291506723235,0.0,0.0,0.0,0.0,0.0,0.007520645753361617,0.0,0.0,0.0,0.010289051834703663,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.045920242236842206,0.0,0.0,0.012140933978023441,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008975120543766146,0.0,0.015911912512213758,0.045920242236842206,0.0,0.0,0.0,0.0,0.0192575564559073,0.0,0.014246476800892737,0.0,0.0,0.0,0.0,0.0,0.0,0.05560884845182087,0.0,0.0,0.0,0.0,0.024281867956046883,0.0,0.0,0.07180096435012917,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.048563735912093765,0.012208148225574202,0.0,0.0,0.0,0.0,0.02904653554754427,0.0,0.028740856931097514,0.0,0.011121769690364174,0.011121769690364174,0.0,0.0,0.012140933978023441,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.033365309071092523,0.0,0.0,0.011121769690364174,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012140933978023441,0.015911912512213758,0.0,0.06122698964912293,0.024281867956046883,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012208148225574202,0.0,0.0,0.0,0.024281867956046883,0.0,0.0,0.014246476800892737,0.0,0.0,0.0,0.19898771635964954,0.0,0.12655754537075828,0.0,0.012140933978023441,0.0,0.045920242236842206,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.006419185485302434,0.010289051834703663,0.030520370563935504,0.0,0.0,0.0,0.0,0.0,0.17252998055207514,0.010289051834703663,0.0,0.0,0.0,0.021369715201339106,0.0,0.0,0.012140933978023441,0.21429446377193026,0.0,0.024281867956046883,0.13355027375825787,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012140933978023441,0.0,0.0,0.0,0.007123238400446368,0.0,0.007520645753361617,0.0,0.0,0.0,0.07284560386814065,0.07284560386814065,0.0849865378461641,0.0,0.0,0.012208148225574202,0.0,0.0,0.0,0.0,0.010289051834703663,0.020578103669407325,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015911912512213758,0.0,0.0,0.0,0.0,0.03008258301344647,0.0,0.010289051834703663,0.0,0.045920242236842206
+transformers,"State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow","<!---
+Copyright 2020 The HuggingFace Team. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the ""License"");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an ""AS IS"" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<p align=""center"">
+  <picture>
+    <source media=""(prefers-color-scheme: dark)"" srcset=""https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-dark.svg"">
+    <source media=""(prefers-color-scheme: light)"" srcset=""https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-light.svg"">
+    <img alt=""Hugging Face Transformers Library"" src=""https://huggingface.co/datasets/huggingface/documentation-images/raw/main/transformers-logo-light.svg"" width=""352"" height=""59"" style=""max-width: 100%;"">
+  </picture>
+  <br/>
+  <br/>
+</p>
+
+<p align=""center"">
+    <a href=""https://huggingface.com/models""><img alt=""Checkpoints on Hub"" src=""https://img.shields.io/endpoint?url=https://huggingface.co/api/shields/models&color=brightgreen""></a>
+    <a href=""https://circleci.com/gh/huggingface/transformers""><img alt=""Build"" src=""https://img.shields.io/circleci/build/github/huggingface/transformers/main""></a>
+    <a href=""https://github.com/huggingface/transformers/blob/main/LICENSE""><img alt=""GitHub"" src=""https://img.shields.io/github/license/huggingface/transformers.svg?color=blue""></a>
+    <a href=""https://huggingface.co/docs/transformers/index""><img alt=""Documentation"" src=""https://img.shields.io/website/http/huggingface.co/docs/transformers/index.svg?down_color=red&down_message=offline&up_message=online""></a>
+    <a href=""https://github.com/huggingface/transformers/releases""><img alt=""GitHub release"" src=""https://img.shields.io/github/release/huggingface/transformers.svg""></a>
+    <a href=""https://github.com/huggingface/transformers/blob/main/CODE_OF_CONDUCT.md""><img alt=""Contributor Covenant"" src=""https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg""></a>
+    <a href=""https://zenodo.org/badge/latestdoi/155220641""><img src=""https://zenodo.org/badge/155220641.svg"" alt=""DOI""></a>
+</p>
+
+<h4 align=""center"">
+    <p>
+        <b>English</b> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_zh-hans.md"">简体中文</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_zh-hant.md"">繁體中文</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_ko.md"">한국어</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_es.md"">Español</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_ja.md"">日本語</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_hd.md"">हिन्दी</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_ru.md"">Русский</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_pt-br.md"">Рortuguês</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_te.md"">తెలుగు</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_fr.md"">Français</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_de.md"">Deutsch</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_vi.md"">Tiếng Việt</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_ar.md"">العربية</a> |
+        <a href=""https://github.com/huggingface/transformers/blob/main/i18n/README_ur.md"">اردو</a> |
+    </p>
+</h4>
+
+<h3 align=""center"">
+    <p>State-of-the-art pretrained models for inference and training</p>
+</h3>
+
+<h3 align=""center"">
+    <a href=""https://hf.co/course""><img src=""https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/course_banner.png""></a>
+</h3>
+
+Transformers is a library of pretrained text, computer vision, audio, video, and multimodal models for inference and training. Use Transformers to fine-tune models on your data, build inference applications, and for generative AI use cases across multiple modalities.
+
+There are over 500K+ Transformers [model checkpoints](https://huggingface.co/models?library=transformers&sort=trending) on the [Hugging Face Hub](https://huggingface.com/models) you can use.
+
+Explore the [Hub](https://huggingface.com/) today to find a model and use Transformers to help you get started right away.
+
+## Installation
+
+Transformers works with Python 3.9+ [PyTorch](https://pytorch.org/get-started/locally/) 2.0+, [TensorFlow](https://www.te",374,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0.0,0.0,0.013670082050985998,0.0,0.0,0.0,0.0,0.0,0.0,0.04749914716943666,0.0,0.0,0.0,0.0,0.10018043389060514,0.0,0.0,0.0,0.0,0.03029900542159145,0.009499829433887332,0.0,0.0,0.0107922275111758,0.0,0.0,0.0,0.027340164101971997,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020618642878251745,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1726756401788128,0.0,0.0107922275111758,0.0,0.0,0.0,0.030316605247880806,0.0,0.0,0.0,0.0,0.0,0.053961137555879,0.0,0.0,0.0,0.0,0.0,0.03029900542159145,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013670082050985998,0.0,0.0605980108431829,0.0,0.0,0.12464093177609371,0.0,0.0,0.0,0.0,0.0,0.0,0.012522554236325643,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02021107016525387,0.0,0.015149502710795725,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.009499829433887332,0.0,0.0605980108431829,0.0,0.012522554236325643,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.025045108472651286,0.0,0.0,0.0,0.014455361085633474,0.0,0.0,0.03436440479708624,0.0107922275111758,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.009499829433887332,0.013670082050985998,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.018999658867774664,0.0,0.0,0.15120338110717949,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012522554236325643,0.0107922275111758,0.0,0.0,0.25486902633360664,0.0,0.23194679276183944,0.05170388705803517,0.6376812737157671,0.0,0.0,0.04042214033050774,0.0,0.10309321439125874,0.0,0.0,0.0,0.02021107016525387,0.0,0.045448508132387176,0.0,0.0,0.0,0.0,0.00895800726796658,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03029900542159145,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010105535082626935,0.0,0.0,0.0,0.013670082050985998,0.0,0.0,0.0,0.0215844550223516,0.0,0.0,0.02406122632223281,0.10449812377276066,0.013670082050985998,0.05170388705803517,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.025403608497735184,0.0,0.013670082050985998,0.0,0.0,0.0,0.1778252594841463,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02316991148487333,0.0,0.0,0.0,0.0,0.11270298812693078,0.0,0.0,0.0,0.0,0.0,0.013670082050985998,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.012522554236325643,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.011584955742436665,0.0,0.0,0.0,0.0,0.0,0.0,0.02891072217126695,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010105535082626935,0.0,0.0,0.0,0.0,0.0,0.0,0.03029900542159145,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.00539346029960752,0.054680328203943994,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028499488301661997,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.030316605247880806,0.0,0.0,0.0,0.0,0.0,0.0,0.012522554236325643,0.0,0.0,0.03029900542159145,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.009499829433887332,0.0,0.0,0.0,0.0,0.0,0.0,0.04811016671592074,0.0,0.0,0.0,0.0,0.00895800726796658,0.0,0.016040817548155208,0.0,0.0,0.013670082050985998,0.0,0.0,0.08549846490498599,0.0,0.0,0.0,0.0,0.0,0.025045108472651286,0.027340164101971997,0.0,0.0,0.0,0.0,0.0,0.008020408774077604,0.0,0.0,0.0,0.05498304767533799,0.0,0.0,0.0,0.0,0.0,0.0,0.011584955742436665,0.0,0.0,0.041010246152957994,0.0,0.0,0.012522554236325643,0.0,0.0,0.0,0.0,0.0,0.013670082050985998,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027340164101971997,0.5150830921670547,0.0,0.0,0.0,0.0,0.0,0.0,0.015149502710795725,0.0,0.040102043870388016,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015149502710795725,0.0,0.006872880959417248,0.03029900542159145,0.0,0.0,0.0,0.0,0.011584955742436665,0.0,0.0,0.0,0.0,0.0,0.0215844550223516,0.0,0.0,0.0,0.011584955742436665,0.0,0.0,0.0,0.012522554236325643,0.0,0.016935738998490123,0.0,0.0,0.025045108472651286,0.0
+nltk,Natural Language Toolkit,"The Natural Language Toolkit (NLTK) is a Python package for
+natural language processing.  NLTK requires Python 3.8, 3.9, 3.10, 3.11 or 3.12.
+",20,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.5829059860732744,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.33137511080105675,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6019367740548479,0.0,0.0,0.0,0.0,0.12038735481096959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.07710533958104115,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.20750522586194883,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.10370159417864055,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.12038735481096959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.12038735481096959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2912837946053809,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+spacy,Industrial-strength Natural Language Processing (NLP) in Python,"<a href=""https://explosion.ai""><img src=""https://explosion.ai/assets/img/logo.svg"" width=""125"" height=""125"" align=""right"" /></a>
+
+# spaCy: Industrial-strength NLP
+
+spaCy is a library for **advanced Natural Language Processing** in Python and
+Cython. It's built on the very latest research, and was designed from day one to
+be used in real products.
+
+spaCy comes with [pretrained pipelines](https://spacy.io/models) and currently
+supports tokenization and training for **70+ languages**. It features
+state-of-the-art speed and **neural network models** for tagging, parsing,
+**named entity recognition**, **text classification** and more, multi-task
+learning with pretrained **transformers** like BERT, as well as a
+production-ready [**training system**](https://spacy.io/usage/training) and easy
+model packaging, deployment and workflow management. spaCy is commercial
+open-source software, released under the
+[MIT license](https://github.com/explosion/spaCy/blob/master/LICENSE).
+
+💫 **Version 3.8 out now!**
+[Check out the release notes here.](https://github.com/explosion/spaCy/releases)
+
+[![tests](https://github.com/explosion/spaCy/actions/workflows/tests.yml/badge.svg)](https://github.com/explosion/spaCy/actions/workflows/tests.yml)
+[![Current Release Version](https://img.shields.io/github/release/explosion/spacy.svg?style=flat-square&logo=github)](https://github.com/explosion/spaCy/releases)
+[![pypi Version](https://img.shields.io/pypi/v/spacy.svg?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/spacy/)
+[![conda Version](https://img.shields.io/conda/vn/conda-forge/spacy.svg?style=flat-square&logo=conda-forge&logoColor=white)](https://anaconda.org/conda-forge/spacy)
+[![Python wheels](https://img.shields.io/badge/wheels-%E2%9C%93-4c1.svg?longCache=true&style=flat-square&logo=python&logoColor=white)](https://github.com/explosion/wheelwright/releases)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
+<br />
+[![PyPi downloads](https://static.pepy.tech/personalized-badge/spacy?period=total&units=international_system&left_color=grey&right_color=orange&left_text=pip%20downloads)](https://pypi.org/project/spacy/)
+[![Conda downloads](https://img.shields.io/conda/dn/conda-forge/spacy?label=conda%20downloads)](https://anaconda.org/conda-forge/spacy)
+
+## 📖 Documentation
+
+| Documentation                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ⭐️ **[spaCy 101]**                                                                                                                                                                                                       | New to spaCy? Here's everything you need to know!                                                                                                                                                                                                                                                                                            |
+| 📚 **[Usage Guides]**                                                                                                                                                                                                     | How to use spaCy and its features.                                                                                                                                                                                                                                                                                                           |
+| 🚀 **[New in v3.0]**                                                                                                                                                                                                      | New features, backwards incompatibilities and migration guide.                                                                                                    ",46,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.03636245631298386,0.0,0.0,0.0,0.026162457170058835,0.0,0.01818122815649193,0.0,0.0,0.0,0.0,0.0,0.04130936288130063,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.02396626352685116,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.052614593845161935,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08698152966615783,0.0,0.020654681440650316,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.022171842663275383,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.022171842663275383,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027665361763746177,0.0,0.0,0.0,0.0,0.0,0.07951459318400293,0.026162457170058835,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1714426296807393,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.022171842663275383,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026307296922580967,0.0,0.0,0.07272491262596772,0.0,0.017144262968073934,0.0,0.0,0.0,0.0,0.0,0.0,0.2968601195595245,0.0,0.0,0.0,0.0,0.0,0.0545436844694758,0.0,0.0,0.0,0.0,0.0,0.0,0.1032734072032516,0.0,0.09090614078245966,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.11838283615161435,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.038680913222563215,0.02396626352685116,0.0,0.0,0.0,0.022171842663275383,0.0,0.23819607717963187,0.0,0.0,0.0,0.0,0.0,0.0,0.10522918769032387,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020654681440650316,0.058021369833844816,0.0,0.0,0.01818122815649193,0.0,0.0,0.0,0.0,0.020654681440650316,0.0,0.0,0.015349842104498157,0.03636245631298386,0.0,0.0,0.02396626352685116,0.0,0.0,0.0,0.0,0.0,0.0,0.08103106926109019,0.09895337318650817,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.022171842663275383,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028993843222052607,0.07189879058055348,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.0,0.0,0.0,0.04793252705370232,0.02396626352685116,0.0,0.028993843222052607,0.0545436844694758,0.04793252705370232,0.022171842663275383,0.0,0.0,0.0,0.0,0.0,0.019340456611281608,0.0,0.017144262968073934,0.0,0.0,0.0,0.022171842663275383,0.0,0.055330723527492354,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.0,0.019340456611281608,0.026162457170058835,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.057987686444105215,0.0,0.0,0.04130936288130063,0.026162457170058835,0.026307296922580967,0.0,0.0,0.0,0.0,0.0751107363150263,0.0,0.04128904963718684,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02396626352685116,0.0,0.0,0.0,0.11604273966768963,0.026162457170058835,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028993843222052607,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0789218907677429,0.0,0.0,0.0,0.0,0.017144262968073934,0.0,0.015349842104498157,0.0,0.7586425277632293,0.0,0.0,0.16492228864418026,0.01818122815649193,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.022171842663275383,0.0,0.0,0.0,0.0,0.1074488947314871,0.0,0.013832680881873088,0.0,0.0920755392290334,0.026162457170058835,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.0,0.04604952631349447,0.0,0.02396626352685116,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0784873715101765,0.028993843222052607,0.0,0.026162457170058835,0.0,0.0,0.0,0.022171842663275383,0.0,0.057987686444105215,0.015349842104498157,0.02396626352685116,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.052614593845161935,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.026162457170058835,0.0,0.04793252705370232,0.09895337318650817,0.020654681440650316,0.0,0.0,0.0,0.0,0.0514327889042218,0.0,0.0,0.0,0.0,0.0,0.0,0.044343685326550766,0.0,0.0
+gensim,Python framework for fast Vector Space Modelling,"
+==============================================
+gensim -- Topic Modelling in Python
+==============================================
+
+|GA|_
+|Wheel|_
+
+.. |GA| image:: https://github.com/RaRe-Technologies/gensim/actions/workflows/tests.yml/badge.svg?branch=develop
+.. |Wheel| image:: https://img.shields.io/pypi/wheel/gensim.svg
+
+.. _GA: https://github.com/RaRe-Technologies/gensim/actions
+.. _Downloads: https://pypi.org/project/gensim/
+.. _License: https://radimrehurek.com/gensim/intro.html#licensing
+.. _Wheel: https://pypi.org/project/gensim/
+
+Gensim is a Python library for *topic modelling*, *document indexing* and *similarity retrieval* with large corpora.
+Target audience is the *natural language processing* (NLP) and *information retrieval* (IR) community.
+
+Features
+---------
+
+* All algorithms are **memory-independent** w.r.t. the corpus size (can process input larger than RAM, streamed, out-of-core)
+* **Intuitive interfaces**
+
+  * easy to plug in your own input corpus/datastream (simple streaming API)
+  * easy to extend with other Vector Space algorithms (simple transformation API)
+
+* Efficient multicore implementations of popular algorithms, such as online **Latent Semantic Analysis (LSA/LSI/SVD)**,
+  **Latent Dirichlet Allocation (LDA)**, **Random Projections (RP)**, **Hierarchical Dirichlet Process (HDP)** or **word2vec deep learning**.
+* **Distributed computing**: can run *Latent Semantic Analysis* and *Latent Dirichlet Allocation* on a cluster of computers.
+* Extensive `documentation and Jupyter Notebook tutorials <https://github.com/RaRe-Technologies/gensim/#documentation>`_.
+
+
+If this feature list left you scratching your head, you can first read more about the `Vector
+Space Model <https://en.wikipedia.org/wiki/Vector_space_model>`_ and `unsupervised
+document analysis <https://en.wikipedia.org/wiki/Latent_semantic_indexing>`_ on Wikipedia.
+
+Installation
+------------
+
+This software depends on `NumPy and Scipy <https://scipy.org/install/>`_, two Python packages for scientific computing.
+You must have them installed prior to installing `gensim`.
+
+It is also recommended you install a fast BLAS library before installing NumPy. This is optional, but using an optimized BLAS such as MKL, `ATLAS <https://math-atlas.sourceforge.net/>`_ or `OpenBLAS <https://xianyi.github.io/OpenBLAS/>`_ is known to improve performance by as much as an order of magnitude. On OSX, NumPy picks up its vecLib BLAS automatically, so you don't need to do anything special.
+
+Install the latest version of gensim::
+
+    pip install --upgrade gensim
+
+Or, if you have instead downloaded and unzipped the `source tar.gz <https://pypi.org/project/gensim/>`_ package::
+
+    python setup.py install
+
+
+For alternative modes of installation, see the `documentation <https://radimrehurek.com/gensim/#install>`_.
+
+Gensim is being `continuously tested <https://radimrehurek.com/gensim/#testing>`_ under all `supported Python versions <https://github.com/RaRe-Technologies/gensim/wiki/Gensim-And-Compatibility>`_.
+Support for Python 2.7 was dropped in gensim 4.0.0 – install gensim 3.8.3 if you must use Python 2.7.
+
+
+How come gensim is so fast and memory efficient? Isn't it pure Python, and isn't Python slow and greedy?
+--------------------------------------------------------------------------------------------------------
+
+Many scientific algorithms can be expressed in terms of large matrix operations (see the BLAS note above). Gensim taps into these low-level BLAS libraries, by means of its dependency on NumPy. So while gensim-the-top-level-code is pure Python, it actually executes highly optimized Fortran/C under the hood, including multithreading (if your BLAS is so configured).
+
+Memory-wise, gensim makes heavy use of Python's built-in generators and iterators for streamed data processing. Memory efficiency was one of gensim's `design goals <https://radimrehurek.com/gensim/intro.html#design-principles>`_, and is a central feature of gensim, rather than something bolted on as an afterthought.
+
+Documentation
+-------------
+* `QuickStart`_
+* `Tutorials`_
+* `Tutorial Videos`_
+* `Official Documentation and Walkthrough`_
+
+Citing gensim
+-------------
+
+When `citing gensim in academic papers and theses <https://scholar.google.cz/citations?view_op=view_citation&hl=en&user=9vG_kV0AAAAJ&citation_for_view=9vG_kV0AAAAJ:u-x6o8ySG0sC>`_, please use this BibTeX entry::
+
+  @inproceedings{rehurek_lrec,
+        title = {{Software Framework for Topic Modelling with Large Corpora}},
+        author = {Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka},
+        booktitle = {{Proceedings of the LREC 2010 Workshop on New
+             Challenges for NLP Frameworks}},
+        pages = {45--50},
+        year = 2010,
+        month = May,
+        day = 22,
+        publisher = {ELRA},
+        address = {Valletta, Malta},
+        language={English}
+  }
+
+----------------
+
+Gensim is open source software released under the `GNU LGPLv2.1 license <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.h",31,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.02936868325363986,0.0,0.0,0.0,0.0,0.09366924946597832,0.0,0.0,0.07992117608831865,0.0,0.015620609875980202,0.0,0.0,0.07025193709948374,0.0,0.0,0.0,0.02936868325363986,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02113050095270988,0.0,0.0,0.0,0.0,0.0,0.010623741475666767,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1598423521766373,0.0,0.0,0.0,0.015620609875980202,0.0,0.0,0.0,0.0,0.017907421289764903,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02113050095270988,0.03871342443068284,0.0,0.0,0.02113050095270988,0.011172172195181228,0.0,0.0,0.0,0.0,0.0,0.07339560440072203,0.02113050095270988,0.0,0.0,0.015620609875980202,0.0,0.0,0.01935671221534142,0.04226100190541976,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02113050095270988,0.10656156811775822,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01468434162681993,0.0,0.0,0.0,0.01935671221534142,0.0,0.015620609875980202,0.02113050095270988,0.0,0.03871342443068284,0.0,0.0,0.0,0.0,0.01935671221534142,0.0,0.0,0.0,0.13320196014719776,0.0,0.0,0.01935671221534142,0.0,0.0,0.0,0.0,0.0,0.04683462473298916,0.05311870737833383,0.0,0.0,0.0,0.0,0.02769364227722348,0.04226100190541976,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.06339150285812964,0.0,0.04405302488045979,0.0,0.0,0.0,0.01935671221534142,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.050046189815732715,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.7992117608831866,0.0,0.0,0.0,0.0,0.05311870737833383,0.0,0.0,0.0,0.02113050095270988,0.01935671221534142,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.04683462473298916,0.0,0.0,0.026178383400166174,0.16614863889978687,0.0,0.0,0.0,0.0,0.031241219751960404,0.0,0.010623741475666767,0.0,0.02113050095270988,0.0,0.0,0.04683462473298916,0.0,0.01468434162681993,0.05328078405887911,0.0,0.09162434190058161,0.02769364227722348,0.01935671221534142,0.035814842579529806,0.0,0.0,0.0,0.02113050095270988,0.0,0.04226100190541976,0.02113050095270988,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02341731236649458,0.0,0.0,0.0,0.02341731236649458,0.0,0.031241219751960404,0.058070136646024256,0.1598423521766373,0.01468434162681993,0.0,0.0,0.0,0.0,0.016682063271910904,0.031241219751960404,0.0,0.03719259063910568,0.04405302488045979,0.0,0.0,0.0,0.0,0.0,0.0,0.01935671221534142,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015620609875980202,0.016682063271910904,0.0,0.0,0.0,0.0,0.017907421289764903,0.10656156811775822,0.0,0.0,0.0,0.01935671221534142,0.10656156811775822,0.0,0.0,0.02113050095270988,0.0,0.0,0.04683462473298916,0.0,0.0,0.01935671221534142,0.01935671221534142,0.02341731236649458,0.0,0.01468434162681993,0.03871342443068284,0.017907421289764903,0.0,0.0,0.0,0.06672825308764362,0.0,0.015620609875980202,0.017907421289764903,0.01384682113861174,0.0,0.0,0.0,0.0,0.02113050095270988,0.0782052053662686,0.0,0.024795060426070457,0.01935671221534142,0.0,0.0,0.02113050095270988,0.0,0.0,0.01935671221534142,0.0,0.015620609875980202,0.0,0.0,0.0,0.015620609875980202,0.0,0.0,0.0,0.02113050095270988,0.0,0.0,0.0,0.0,0.0,0.0,0.07992117608831865,0.03336412654382181,0.0,0.0318712244270003,0.0,0.0,0.0,0.0,0.04044287519700211,0.0,0.1000431607425848,0.0,0.0,0.0,0.0,0.0,0.02113050095270988,0.10656156811775822,0.04683462473298916,0.10656156811775822,0.0,0.017907421289764903,0.0,0.0,0.0,0.0,0.02113050095270988,0.0,0.0,0.02113050095270988,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01384682113861174,0.0,0.0,0.0,0.03336412654382181,0.0,0.03871342443068284,0.0,0.0,0.0,0.02936868325363986,0.07992117608831865,0.0,0.0,0.0,0.02341731236649458,0.0,0.010623741475666767,0.04226100190541976,0.0,0.0,0.0,0.04154046341583522,0.0,0.024795060426070457,0.07992117608831865,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.011172172195181228,0.017907421289764903,0.021247482951333534,0.0,0.0,0.0,0.0,0.0,0.016682063271910904,0.0,0.0,0.10656156811775822,0.0,0.012397530213035229,0.01935671221534142,0.0,0.0,0.0,0.0,0.0,0.02113050095270988,0.0,0.0,0.0,0.017907421289764903,0.07025193709948374,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.05372226386929471,0.0,0.0,0.0,0.0,0.0,0.03719259063910568,0.0,0.013089191700083087,0.0,0.016682063271910904,0.0,0.0,0.0,0.0,0.04683462473298916,0.07992117608831865,0.021247482951333534,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.058070136646024256,0.0,0.0,0.07992117608831865,0.07992117608831865,0.0,0.0,0.01384682113861174,0.0,0.0,0.0,0.0,0.013089191700083087,0.0,0.017907421289764903,0.0,0.0
+pillow,Python Imaging Library (Fork),"<p align=""center"">
+    <img width=""248"" height=""250"" src=""https://raw.githubusercontent.com/python-pillow/pillow-logo/main/pillow-logo-248x250.png"" alt=""Pillow logo"">
+</p>
+
+# Pillow
+
+## Python Imaging Library (Fork)
+
+Pillow is the friendly PIL fork by [Jeffrey A. Clark and
+contributors](https://github.com/python-pillow/Pillow/graphs/contributors).
+PIL is the Python Imaging Library by Fredrik Lundh and contributors.
+As of 2019, Pillow development is
+[supported by Tidelift](https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=readme&utm_campaign=enterprise).
+
+<table>
+    <tr>
+        <th>docs</th>
+        <td>
+            <a href=""https://pillow.readthedocs.io/?badge=latest""><img
+                alt=""Documentation Status""
+                src=""https://readthedocs.org/projects/pillow/badge/?version=latest""></a>
+        </td>
+    </tr>
+    <tr>
+        <th>tests</th>
+        <td>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/lint.yml""><img
+                alt=""GitHub Actions build status (Lint)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Lint/badge.svg""></a>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/test.yml""><img
+                alt=""GitHub Actions build status (Test Linux and macOS)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Test/badge.svg""></a>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/test-windows.yml""><img
+                alt=""GitHub Actions build status (Test Windows)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Test%20Windows/badge.svg""></a>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/test-mingw.yml""><img
+                alt=""GitHub Actions build status (Test MinGW)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Test%20MinGW/badge.svg""></a>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/test-cygwin.yml""><img
+                alt=""GitHub Actions build status (Test Cygwin)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Test%20Cygwin/badge.svg""></a>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/test-docker.yml""><img
+                alt=""GitHub Actions build status (Test Docker)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Test%20Docker/badge.svg""></a>
+            <a href=""https://github.com/python-pillow/Pillow/actions/workflows/wheels.yml""><img
+                alt=""GitHub Actions build status (Wheels)""
+                src=""https://github.com/python-pillow/Pillow/workflows/Wheels/badge.svg""></a>
+            <a href=""https://app.codecov.io/gh/python-pillow/Pillow""><img
+                alt=""Code coverage""
+                src=""https://codecov.io/gh/python-pillow/Pillow/branch/main/graph/badge.svg""></a>
+            <a href=""https://issues.oss-fuzz.com/issues?q=title:pillow""><img
+                alt=""Fuzzing Status""
+                src=""https://oss-fuzz-build-logs.storage.googleapis.com/badges/pillow.svg""></a>
+        </td>
+    </tr>
+    <tr>
+        <th>package</th>
+        <td>
+            <a href=""https://zenodo.org/badge/latestdoi/17549/python-pillow/Pillow""><img
+                alt=""Zenodo""
+                src=""https://zenodo.org/badge/17549/python-pillow/Pillow.svg""></a>
+            <a href=""https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=badge""><img
+                alt=""Tidelift""
+                src=""https://tidelift.com/badges/package/pypi/pillow?style=flat""></a>
+            <a href=""https://pypi.org/project/pillow/""><img
+                alt=""Newest PyPI version""
+                src=""https://img.shields.io/pypi/v/pillow.svg""></a>
+            <a href=""https://pypi.org/project/pillow/""><img
+                alt=""Number of PyPI downloads""
+                src=""https://img.shields.io/pypi/dm/pillow.svg""></a>
+            <a href=""https://www.bestpractices.dev/projects/6331""><img
+                alt=""OpenSSF Best Practices""
+                src=""https://www.bestpractices.dev/projects/6331/badge""></a>
+        </td>
+    </tr>
+    <tr>
+        <th>social</th>
+        <td>
+            <a href=""https://gitter.im/python-pillow/Pillow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge""><img
+                alt=""Join the chat at https://gitter.im/python-pillow/Pillow""
+                src=""https://badges.gitter.im/python-pillow/Pillow.svg""></a>
+            <a href=""https://fosstodon.org/@pillow""><img
+                alt=""Follow on https://fosstodon.org/@pillow""
+                src=""https://img.shields.io/badge/publish-on%20Mastodon-595aff.svg""
+                rel=""me""></a>
+        </td>
+    </tr>
+</table>
+
+## Overview
+
+The Python Imaging Library adds image processing capabilities to your Python interpreter.
+
+This library provides extensive file format support, an efficient i",22,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.1017245566300639,0.011587248991803646,0.0,0.0,0.0,0.0,0.007266039759290278,0.0,0.0,0.0,0.0,0.1724040201816557,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010455699271916283,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.11564942155117398,0.0,0.0,0.0,0.0,0.0,0.0,0.009578001121203094,0.0,0.0,0.0,0.0,0.0,0.007729319795715916,0.0,0.0,0.06183455836572733,0.0,0.0,0.0,0.0,0.010455699271916283,0.008254543382409085,0.0,0.0,0.0,0.011587248991803646,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.005528163906208718,0.0,0.017721739031206562,0.0,0.0,0.0,0.09533286594488817,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02318795938714775,0.0,0.0,0.0,0.0,0.009578001121203094,0.0,0.0,0.0,0.0,0.0,0.0,0.03954623624434994,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.013703243290005456,0.0,0.0,0.0,0.0,0.006134490039402914,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.005528163906208718,0.03954623624434994,0.0,0.005256791888689726,0.0,0.0,0.007266039759290278,0.0,0.0,0.010455699271916283,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.007266039759290278,0.0,0.0,0.0,0.0,0.008254543382409085,0.0,0.0,0.03954623624434994,0.008860869515603281,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.11564942155117398,0.007729319795715916,0.034761746975410936,0.0,0.0,0.0,0.0,0.017721739031206562,0.0,0.0,0.0,0.0,0.009578001121203094,0.0,0.0,0.0,0.15063478176525577,0.0,0.16875283757582518,0.0,0.0,0.0,0.0,0.007729319795715916,0.06591039374058323,0.11039262966248424,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015458639591431832,0.0,0.0,0.009578001121203094,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.014532079518580557,0.010455699271916283,0.0,0.0,0.0,0.0,0.0,0.0,0.03067245019701457,0.0,0.0,0.0,0.0,0.0,0.0,0.034761746975410936,0.0,0.0,0.0,0.01943020457983703,0.0,0.0,0.0,0.0,0.0,0.01295346971989135,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03954623624434994,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.010455699271916283,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.03869714734346103,0.0,0.012268980078805829,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.8700171973756987,0.0,0.0,0.02317449798360729,0.0,0.0,0.0,0.007729319795715916,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.008254543382409085,0.0,0.02628395944344863,0.008860869515603281,0.0,0.0,0.0,0.05503234351467107,0.0,0.11550678072646615,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.007266039759290278,0.0,0.008860869515603281,0.020911398543832567,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01577037566606918,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.130788715667225,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.08620201009082785,0.0,0.006134490039402914,0.02317449798360729,0.005528163906208718,0.008860869515603281,0.07359508644165617,0.0,0.020911398543832567,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.09815184063044663,0.0,0.0,0.0,0.0,0.04789000560601547,0.0,0.010455699271916283,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.020911398543832567,0.03136709781574885,0.03136709781574885,0.0,0.0,0.010513583777379452,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.028734003363609283,0.0,0.008254543382409085,0.0,0.0,0.03136709781574885,0.0,0.09592270303003819,0.0,0.0,0.0,0.0,0.01295346971989135,0.0,0.06202608660922296,0.028734003363609283,0.0
