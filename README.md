@@ -6,7 +6,7 @@ A smart deep learning-powered recommendation system for Python packages that hel
 
 ## 📚 Overview
 
-**PyLib Recommender** analyzes Python project needs and suggests the most appropriate libraries using advanced deep learning techniques. Say goodbye to manual package searching - let AI find the perfect tools for your project!
+**PyLib Recommender** analyzes Python project needs and suggests the most appropriate libraries using a deep learning model. 
 
 ## ✨ Features
 
