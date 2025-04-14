@@ -31,7 +31,7 @@ User Project → Feature Extraction → Deep Learning Model → Personalized Rec
 
 ```bash
 # Clone the repository
-git clone https://github.com/markattarcolgate64/lib_recommender.git
+git clone https://github.com/markattarcolgate64/library-ml-recommender/
 
 # Navigate to the project directory
 cd lib_recommender
@@ -93,7 +93,7 @@ Our model achieves excellent results in recommending relevant packages, with hig
 
 **Mark Attar** - *Creator*
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?style=social&logo=github)](https://github.com/markattar)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?style=social&logo=github)](https://github.com/markattarcolgate64)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=social&logo=linkedin)](https://linkedin.com/in/markattar)
 
 ## 📝 License
